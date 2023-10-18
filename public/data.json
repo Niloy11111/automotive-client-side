@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "brand_img": "https://d9s1543upwp3n.cloudfront.net/wp-content/uploads/2021/12/toyota-company-.jpeg",
+      "brand_name": "Toyota"
+    },
+    {
+      "id": 2,
+      "brand_img": "https://stockdividendscreener.com/wp-content/uploads/2020/08/ford-brand.jpg",
+      "brand_name": "Ford"
+    },
+    {
+      "id": 3,
+      "brand_img": "https://www.carandbike.com/_next/image?url=https%3A%2F%2Fc.ndtvimg.com%2F2022-01%2F1kcopsc_bmw-generic_625x300_15_January_22.jpg&w=750&q=75",
+      "brand_name": "BMW"
+    },
+    {
+      "id": 4,
+      "brand_img": "https://us.123rf.com/450wm/josefkubes/josefkubes1702/josefkubes170200208/73627305-prague-czech-republic-february-25-mercedes-benz-car-logo-on-dealership-building-on-february-25-2017.jpg?ver=6",
+      "brand_name": "Mercedes-Benz"
+    },
+    {
+      "id": 5,
+      "brand_img": "https://marketingweek.imgix.net/content/uploads/2021/06/18122854/Tesla.jpg",
+      "brand_name": "Tesla"
+    },
+    {
+      "id": 6,
+      "brand_img": "https://s.yimg.com/ny/api/res/1.2/blt69x3Q.uii1oy6hC3yrw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/the_cool_down_737/13cb6d2674c0972ff4cc8c52fb0c02b9",
+      "brand_name": "Honda"
+    }
+  ]
+  

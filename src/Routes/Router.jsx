@@ -8,7 +8,6 @@ import Login from "../Pages/Login/Login";
 import HomePage from "../Pages/Home/HomePage";
 
 
-  
 
 export const router = createBrowserRouter([
     {
@@ -18,7 +17,7 @@ export const router = createBrowserRouter([
         children : [
            {
             path : '/',
-            element : <HomePage></HomePage>
+            element : <HomePage></HomePage>   
            },
             {
                 path : '/login',
