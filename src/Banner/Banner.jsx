@@ -15,10 +15,11 @@ const Banner = () => {
         }>
 
            <div>
-           <h2 className="text-center text-[#FFF] text-3xl lg:text-5xl font-Inter font-semibold">Where Luxury Meets Performance, <br /> Every Mile Matters !  </h2>
+           <h2 className="text-center text-[#FFF] text-3xl lg:text-5xl font-Inter font-semibold">YOUR DREAM
+BUILD STARTS HERE   </h2>
             <p className="text-center mt-4 lg:mt-6 font-inter text-[#FFF]">Where Automotive Perfection Meets Your Imagination, Drive Beyond Limits</p>
             <div className="flex justify-center">
-            <NavLink to="/login"><button className="px-6 lg:px-9 text-[#FFF] py-3 lg:py-4 text-base font-Inter mt-6 rounded bg-[#009EE2]">LET'S TALK</button> </NavLink>
+            <NavLink to="/login"><button className="px-6 lg:px-9 text-[#FFF] py-3 lg:py-4 text-base font-Inter mt-6 rounded bg-[#009EE2]">SHOP NOW</button> </NavLink>
             </div>
 
            </div>

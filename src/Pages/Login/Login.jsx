@@ -110,7 +110,7 @@ const Login = () => {
       <h2 className="mb-10 text-[#009EE2] pt-7 font-Inter text-4xl font-bold text-center">Register Here</h2>
 
       <div>
-        <input className="border-[#009EE2] pl-5 bg-[#FFF]  rounded-lg py-3 outline-none w-full block border pb-3 mb-8 " type="text" placeholder="Your Name" name="name" />
+        <input className="border-[#009EE2] pl-5 bg-[#FFF]  rounded-lg py-3 outline-none w-full block border pb-3 mb-8" type="text" placeholder="Your Name" name="name" />
 
         <input className="border-[#009EE2] bg-[#FFF] rounded-lg py-3 outline-none w-full border b block pl-5 pb-3 mb-8" type="emial" placeholder="Username or Email" name="email" required />
 
