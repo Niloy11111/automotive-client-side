@@ -1,8 +1,24 @@
-# React + Vite
+### Feature-1 
+## Dynamic route for all brands card
+<br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### If our website users click on a brand he/she will go to a dynamic productsList route where users can view our all products in that particular brand .
+<br/>
 
-Currently, two official plugins are available:
+### Feature - 2 
+## Authentication Users
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### user can register and login in my website by their email and password and we have another Google Authentication system to login .
+
+### Feature - 3 
+## Product Details Route can only accessed by login user. 
+### only our user can access product details route . If a non-user try to access that route functionality will throw him/her to login page
+
+### Feature - 4 
+##  Add Product Private route
+### Only our website login user can access add product where a use can add a product .
+
+### Feature-5 
+## My cart Page 
+### In this page a user can see which product he/she added to his/her cart .
+ 
