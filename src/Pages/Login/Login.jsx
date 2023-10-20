@@ -66,7 +66,7 @@ const Login = () => {
     googleSignIn()
     .then(res => { 
       console.log(res.user)
-      alert("Login Successful!", "Welcome back!", "success")
+      new Swal("Login Successful!", "Welcome back!", "success")
     })
     .catch(error => console.log(error))
 
