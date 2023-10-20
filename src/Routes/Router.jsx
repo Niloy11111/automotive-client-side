@@ -8,10 +8,10 @@ import Login from "../Pages/Login/Login";
 import HomePage from "../Pages/Home/HomePage";
 import AddProduct from "../AddProduct/AddProduct";
 import ProductList from "../ProductList/ProductList";
-import ProductDetails from "../ProductsDetails/ProductDetails";
 import DetailsForm from "../ProductsDetailsForm/DetailsForm";
 import UpdateProduct from "../UpdateProducts/UpdateProduct";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
+import ProductDetails from "../ProductsDetails/ProductDetails";
 
 
 export const router = createBrowserRouter([
@@ -38,11 +38,11 @@ export const router = createBrowserRouter([
                 element : <ProductList></ProductList>,
                 loader : ({params}) => fetch(`http://localhost:5000/brands/${params.brandName}`),  
             },
-            // {
-            //     path : '/details/:id',
-            //     element :<ProductDetails></ProductDetails>,
-            //     loader : ({params}) => fetch(`http://localhost:5000/allProducts/${params._id}`)
-            // },
+            {
+                path : 'details/:id',
+                element :<ProductDetails></ProductDetails>,
+                loader : ({params}) => fetch(`http://localhost:5000/allProducts/${params.id}`)
+            },
             {
                 path : '/detailsForm',
                 element : <DetailsForm></DetailsForm>

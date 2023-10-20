@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const SingleBrandProduct = ({product}) => {
 
     const {_id , photoURL, productName, brandName, productType, productPrice, description, rating } = product ;
+
     return (
         <div>
 
