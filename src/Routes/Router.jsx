@@ -8,7 +8,6 @@ import Login from "../Pages/Login/Login";
 import HomePage from "../Pages/Home/HomePage";
 import AddProduct from "../AddProduct/AddProduct";
 import ProductList from "../ProductList/ProductList";
-import DetailsForm from "../ProductsDetailsForm/DetailsForm";
 import UpdateProduct from "../UpdateProducts/UpdateProduct";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 import ProductDetails from "../ProductsDetails/ProductDetails";
@@ -37,27 +36,23 @@ export const router = createBrowserRouter([
             {
                 path : '/myCart',
                 element : <PrivateRoute> <MyCart></MyCart> </PrivateRoute>,
-                loader : () => fetch('http://localhost:5000/addToCart')
+                loader : () => fetch(' https://automotive-server-side-eur51ebix-niloys-projects-a44fef83.vercel.app/addToCart')
                 
             },
             {
                 path : '/brandProductList/:brandName',
                 element : <ProductList></ProductList>,
-                loader : ({params}) => fetch(`http://localhost:5000/brands/${params.brandName}`),  
+                loader : ({params}) => fetch(` https://automotive-server-side-eur51ebix-niloys-projects-a44fef83.vercel.app/brands/${params.brandName}`),  
             },
             {
                 path : 'details/:id',
                 element :<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-                loader : ({params}) => fetch(`http://localhost:5000/allProducts/${params.id}`)
-            },
-            {
-                path : '/detailsForm',
-                element : <DetailsForm></DetailsForm>
+                loader : ({params}) => fetch(` https://automotive-server-side-eur51ebix-niloys-projects-a44fef83.vercel.app/allProducts/${params.id}`)
             },
             {
                 path: 'updateProducts/:id',
-                element: <UpdateProduct></UpdateProduct> ,
-                loader: ({ params }) => fetch(`http://localhost:5000/allProducts/${params.id}`)
+                element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute> ,
+                loader: ({ params }) => fetch(` https://automotive-server-side-eur51ebix-niloys-projects-a44fef83.vercel.app/allProducts/${params.id}`)
               },
 
          

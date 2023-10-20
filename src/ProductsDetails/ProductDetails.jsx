@@ -11,7 +11,7 @@ const ProductDetails = () => {
     const handleAddToCart = () => {
         
 
-        fetch('http://localhost:5000/addToCart', {
+        fetch(' https://automotive-server-side-eur51ebix-niloys-projects-a44fef83.vercel.app/addToCart', {
             method : 'POST',
             headers : {
                 'content-type' : 'application/json'
@@ -40,6 +40,8 @@ const ProductDetails = () => {
               <div className="flex-1">
               <h2 className="text-[#100F0F] text-xl  font-inter font-medium mb-2">{productName}</h2>
                 <h2 className="text-[#100F0F] text-xl  font-inter font-medium mb-2">{brandName}</h2>
+
+                <h2 className="text-[#100F0F] text-xl  font-inter font-medium mb-2">{productPrice}</h2>
                 <p className="text-[#706F6F] mt-2 mb-2 text-lg font-inter font-semibold">{description}</p>
 
                 <button onClick={handleAddToCart} className="mt-4 rounded px-10 py-3 font-inter font-bold text-xl text-[#FFF] bg-[#DC3545]">Add to Cart</button>

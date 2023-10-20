@@ -2,7 +2,7 @@
 
 const Gallary = () => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-16 lg:mt-32">
 
             <div className="relative">
                 <img src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-01/desktop/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.jpg"></img>

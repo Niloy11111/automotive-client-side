@@ -6,7 +6,6 @@ const Accessory = () => {
         <div className="lg:-mx-36 h-[350px] lg:h-[75vh] rounded lg:rounded-none" style={{
             backgroundImage : `URL("https://www.bmwusa.com/content/dam/bmwusa/common/fma/new-aftersales-fmas-assets/bmw-accessory-center/BMW-AccCen-Section-FMA-1280.jpg")`,
             backgroundRepeat : 'no-repeat',
-            backgroundColor : `rgba(8, 8, 8, 0.70)`,
             backgroundBlendMode : 'color',
             backgroundSize : 'cover'
         }}>

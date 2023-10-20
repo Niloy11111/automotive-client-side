@@ -93,7 +93,7 @@ const Login = () => {
           <img className="mx-auto rounded-full" src={user.photoURL}></img>
           <h2 className="mt-4 mb-3 text[#191A48] text-xl font-Inter font-semibold "> {user.displayName} </h2>
           <div className="flex justify-center">
-          <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded-lg bg-gradient-to-r from-[#F00] to-[#FF8938]">LogOut</button>
+          <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded bg-[#F15B22]">LogOut</button>
           </div>
          </div>
 

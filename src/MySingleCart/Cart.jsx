@@ -19,7 +19,7 @@ const Cart = ({cart, carts, setCarts}) => {
             if (result.isConfirmed) {
 
 
-                fetch(`http://localhost:5000/addToCart/${_id}`, {
+                fetch(` https://automotive-server-side-eur51ebix-niloys-projects-a44fef83.vercel.app/addToCart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

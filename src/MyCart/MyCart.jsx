@@ -8,9 +8,9 @@ const MyCart = () => {
     const [carts , setCarts] = useState(loadedcarts)
     return (
         <div>
-            <h2 className="text-3xl my-20 font-inter text-center font-bold">Your Previous Products</h2>
+            <h2 className="text-4xl my-20 font-inter text-center font-bold">Your Selected Products</h2>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <div className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
                 {
                     carts.map(cart => <Cart
                     cart={cart}
