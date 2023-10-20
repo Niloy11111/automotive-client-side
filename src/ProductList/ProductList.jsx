@@ -1,22 +1,19 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useParams } from "react-router-dom";
 import SingleBrandProduct from "./SingleBrandProduct";
-import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 
 const ProductList = () => {
-
-    const [brands , setBrands ] = useState([]);
-    
-    const [ toyota ] = brands ;
-    console.log(toyota)
-
-    useEffect(() => {
-        fetch('./data.json')
-        .then(res => res.json())
-        .then(data => setBrands(data))
-    }, [])
-    
     const products = useLoaderData() ;
+
+   const {adds} = useContext(AuthContext)
+
+   const params = useParams() ;
+   const brandName = params.brandName ;
+  
+   const clickedBrand = adds.filter(each => each.brand_name === brandName)
+
 
     return (
         <div className="mb-20">
@@ -24,21 +21,21 @@ const ProductList = () => {
 
             <div className="carousel mb-16 w-full">
   <div id="slide1" className="carousel-item relative w-full">
-<img  src="" className="w-full h-[560px]" />
+<img src={clickedBrand[0].adds_img_1} className="w-full h-[700px]" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide4" className="btn btn-circle">❮</a> 
       <a href="#slide2" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide2" className="carousel-item relative w-full">
-    <img src="" className="w-full" />
+    <img src={clickedBrand[0].adds_img_2} className="w-full h-[700px]" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide1" className="btn btn-circle">❮</a> 
       <a href="#slide3" className="btn btn-circle">❯</a>
     </div>
   </div> 
   <div id="slide3" className="carousel-item relative w-full">
-    <img src="" className="w-full" />
+    <img src={clickedBrand[0].adds_img_3} className="w-full h-[700px]" />
     <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
       <a href="#slide2" className="btn btn-circle">❮</a> 
       <a href="#slide4" className="btn btn-circle">❯</a>

@@ -3,10 +3,10 @@ import { useLoaderData } from "react-router-dom";
 
 const ProductDetails = () => {
 
-    const product = useLoaderData()
-    console.log(product)
-    
-    const { photoURL, productName, brandName, productType, productPrice, description, rating } = product ;
+    const product = useLoaderData();
+
+    const {_id, photoURL, productName, brandName, productType, productPrice, description, rating } = product ;
+
 
     return (
         <div>

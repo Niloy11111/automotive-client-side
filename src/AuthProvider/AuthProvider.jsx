@@ -9,6 +9,15 @@ export const AuthContext = createContext(null)
 
 const AuthProvider = ({children}) => {
 
+    const [adds ,setAdds ] = useState([]);
+
+   
+    useEffect(() => {
+        fetch('/add.json')
+        .then(res => res.json())
+        .then(data => setAdds(data))
+    }, [])
+
     const googleprovider = new GoogleAuthProvider();
 
     const [user , setUser ] = useState(null) ;
@@ -47,6 +56,7 @@ const AuthProvider = ({children}) => {
     }, [])
 
     const AuthInfo = {
+        adds,
         user,
         loading,
         createUser,
