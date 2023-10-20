@@ -6,7 +6,7 @@ const NavBar = () => {
         <div className="flex items-center flex-col lg:flex-row  justify-between mb-14">
             
             <div className="flex items-center">
-              <img className="w-[130px]" src="https://imgd.aeplcdn.com/0x0/cw/static/icons/new-header/logo.svg" alt="" />
+              <img className="w-[130px] mb-4" src="https://imgd.aeplcdn.com/0x0/cw/static/icons/new-header/logo.svg" alt="" />
              
             </div>
 

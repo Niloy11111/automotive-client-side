@@ -7,7 +7,7 @@ const UpdateProduct = () => {
 
     const {_id, photoURL, productName, brandName, productType, productPrice, description, rating } = product ;
 
-    const handleAddProduct = e => {
+    const handleUpdateProduct = e => {
         e.preventDefault() ;
         const form = e.target ;
         const photoURL = form.photoURL.value ;
@@ -49,9 +49,9 @@ const UpdateProduct = () => {
         <div className="mb-20">
 
             <h2 className="text-3xl font-inter font-bold text-center mb-7 text-[#1C1B1B]">Update Your Product</h2>
-            <form className="" onSubmit={handleAddProduct}>
+            <form className="" onSubmit={handleUpdateProduct}>
 
-                <div className="w-2/4 mx-auto">
+                <div className="lg:w-2/4 mx-auto">
                  
                     
               <label htmlFor="">

@@ -38,7 +38,7 @@ const AddProduct = () => {
             <h2 className="text-3xl font-inter font-bold text-center mb-7 text-[#1C1B1B]">Let's Add Product</h2>
             <form className="" onSubmit={handleAddProduct}>
 
-                <div className="w-2/4 mx-auto">
+                <div className="lg:w-2/4 mx-auto">
                  
                     
               <label htmlFor="">
