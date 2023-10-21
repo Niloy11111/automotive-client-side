@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div  className="lg:-mx-36 flex justify-center items-center h-[350px] lg:h-[84vh] rounded lg:rounded-none" style={
+        <div  className="-mx-12 lg:-mx-36 flex justify-center items-center h-[290px] lg:h-[84vh] " style={
             {
                 backgroundImage : `URL("https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-07/desktop/BMW-MY24-i7-Homepage-FMA-Desktop.jpg")` ,
                 backgroundRepeat : 'no-repeat',

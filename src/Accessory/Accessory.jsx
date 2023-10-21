@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Accessory = () => {
     return (
-        <div className="lg:-mx-36 h-[350px] lg:h-[75vh] rounded lg:rounded-none" style={{
+        <div className="-mx-12 lg:-mx-36 h-[290px] lg:h-[75vh] rounded lg:rounded-none" style={{
             backgroundImage : `URL("https://www.bmwusa.com/content/dam/bmwusa/common/fma/new-aftersales-fmas-assets/bmw-accessory-center/BMW-AccCen-Section-FMA-1280.jpg")`,
             backgroundRepeat : 'no-repeat',
             backgroundBlendMode : 'color',
