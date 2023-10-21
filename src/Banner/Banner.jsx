@@ -13,6 +13,7 @@ const Banner = () => {
             }
         }>
             
+            
 
            <div>
            <h2 className="text-center text-[#FFF] text-3xl lg:text-5xl font-Inter font-semibold">YOUR DREAM

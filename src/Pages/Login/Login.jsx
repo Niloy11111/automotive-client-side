@@ -9,6 +9,7 @@ const Login = () => {
 
   const { signInUser, user , createUser, googleSignIn, logOut} = useContext(AuthContext) ;
 
+
   console.log(user)
   const [toogle, setToogle] = useState(true)
 
@@ -39,7 +40,7 @@ const Login = () => {
           new Swal("Thank you!", "You have successfully completed your registration!", "success") 
         } )
         .catch(error => console.log(error))
-    }
+    }  
 
   };
 
@@ -91,7 +92,7 @@ const Login = () => {
          <div className=" border px-14 py-8">
         
           <img className="mx-auto rounded-full" src={user.photoURL}></img>
-          <h2 className="mt-4 mb-3 text[#191A48] text-xl font-Inter font-semibold "> {user.displayName} </h2>
+          <h2 className="mt-4 mb-3 text-[#009EE2] text-xl font-Inter font-semibold "> {user.displayName} </h2>
           <div className="flex justify-center">
           <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded bg-[#F15B22]">LogOut</button>
           </div>
@@ -100,10 +101,10 @@ const Login = () => {
         </div>
       }
 
-<div className="rounded bg-[white] mb-10 -mx-6 flex lg:justify-center lg:items-center h-full lg:h-[84vh]">
+<div className="rounded mt-5 mb-10 -mx-14 flex lg:justify-center lg:items-center h-full lg:h-[84vh]">
 
 
-<div className="border border-[#5fa2bf] lg:p-6">
+<div className="lg:border border-[#5fa2bf] lg:p-6">
 
   <div className="">
     <form onSubmit={handleLogin} className="px-7 lg:px-14 rounded  lg:w-[570px]">
@@ -195,7 +196,7 @@ const Login = () => {
          <div className=" border px-14 py-8">
         
           <img className="mx-auto rounded-full" src={user.photoURL}></img>
-          <h2 className="mt-4 mb-3 text[#191A48] text-xl font-Inter font-semibold "> {user.displayName} </h2>
+          <h2 className="mt-4 mb-3 text-[#009EE2] text-xl font-Inter font-semibold "> {user.displayName} </h2>
           <div className="flex justify-center">
           <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded-lg bg-gradient-to-r from-[#F00] to-[#FF8938]">LogOut</button>
           </div>
@@ -204,9 +205,9 @@ const Login = () => {
         </div>
       }
     
-    <div className=" rounded bg-[white] flex justify-center items-center h-[83vh]">
+    <div className=" rounded flex justify-center items-center h-[83vh]">
        
-       <div className="border border-[#5fa2bf]  -mt-20 lg:p-6">
+       <div className="lg:border border-[#5fa2bf]  -mt-20 lg:p-6">
 
           <div>
           <form onSubmit={handleSignInUser} className="px-8 lg:px-14 rounded lg:w-[570px]">

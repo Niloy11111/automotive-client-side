@@ -48,7 +48,7 @@ const UpdateProduct = () => {
     return (
         <div className="mb-20">
 
-            <h2 className="text-3xl font-inter font-bold text-center mb-7 text-[#1C1B1B]">Update Your Product</h2>
+            <h2 className="text-3xl font-inter font-bold text-center mb-7  text-[#1C1B1B]">Update Your Product</h2>
             <form className="" onSubmit={handleUpdateProduct}>
 
                 <div className="lg:w-2/4 mx-auto">

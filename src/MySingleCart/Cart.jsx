@@ -43,7 +43,7 @@ const Cart = ({cart, carts, setCarts}) => {
 
     return (
         <div className="bg-[#FFF] rounded border p-7 border-[#E7E7E7]">
-            <img className="h-[500px] w-full" src={photoURL}></img>
+            <img className="lg:h-[500px] w-full" src={photoURL}></img>
             <h2 className="mt-5 text-[#111] text-2xl font-bold font-inter">{productName}</h2>
           
             <p className="mt-2  text-[#706F6F] font-normal font-inter">{description}</p>

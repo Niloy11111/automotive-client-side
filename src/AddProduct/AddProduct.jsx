@@ -35,44 +35,44 @@ const AddProduct = () => {
     return (
         <div className="mb-20">
 
-            <h2 className="text-4xl font-inter font-bold text-center mb-7 text-[#1C1B1B]">Let's Add a Product</h2>
+            <h2 className="text-4xl font-inter font-bold text-center mb-7  ">Let's Add a Product</h2>
             <form className="" onSubmit={handleAddProduct}>
 
                 <div className="lg:w-2/4 mx-auto">
                  
                     
               <label htmlFor="">
-                <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Product Image</h4>
+                <h4 className="mb-2 text-lg  font-bold">Product Image</h4>
               <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-6" type="text" placeholder="photoURL" src="" name="photoURL" alt="" />
               </label>
 
                 <label htmlFor="">
-                <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Product Name</h4>
+                <h4 className="mb-2 text-lg  font-bold">Product Name</h4>
                 <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-4" type="text" placeholder="productName" name="productName" id="" />
                 </label>
 
                <label htmlFor="">
-               <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Brand Name</h4>
+               <h4 className="mb-2 text-lg  font-bold">Brand Name</h4>
                <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-4" type="text" placeholder="Brand Name" name="brandName" id="" />
                </label>
 
              <label htmlFor="">
-             <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Product Types</h4>
+             <h4 className="mb-2 text-lg  font-bold">Product Types</h4>
              <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-4" type="text" placeholder="Product Type" name="productType" id="" />
              </label>
               
              <label htmlFor="">
-             <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Product Price</h4>
+             <h4 className="mb-2 text-lg  font-bold">Product Price</h4>
              <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-4" type="text" placeholder="Product Price" name="productPrice" id="" />
              </label>
 
                <label htmlFor="">
-               <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Short Description</h4>
+               <h4 className="mb-2 text-lg  font-bold">Short Description</h4>
                  <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-4" type="text" placeholder="Short Description" name="description" id="" />
                </label>
 
                <label htmlFor="">
-               <h4 className="mb-2 text-lg text-[#0D0925] font-semibold">Rating</h4>
+               <h4 className="mb-2 text-lg  font-bold">Rating</h4>
                <input className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-6" type="text" placeholder="Rating" name="rating" id="" />
                </label>
                 <button className="w-full bg-[#009EE2] py-3 rounded text-[#FFF] text-base font-inter font-medium"> Add Product </button>
