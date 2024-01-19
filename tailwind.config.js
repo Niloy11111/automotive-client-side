@@ -1,22 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode : 'class',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+
   theme: {
     extend: {
-      fontFamily : {
-        Inter : "'Inter', sans-serif"
-      }
+      fontFamily: {
+        Inter: "'Inter', sans-serif",
+      },
     },
   },
   plugins: [require("daisyui")],
-  themes: [
-    "light",
-    "dark",
-
-  ],
-}
-
+  darkMode: "class",
+  themes: ["light", "dark"],
+};
