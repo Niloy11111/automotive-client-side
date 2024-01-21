@@ -1,51 +1,50 @@
 [
-    {
-      "id": 1,
-      "brand_img": "https://d9s1543upwp3n.cloudfront.net/wp-content/uploads/2021/12/toyota-company-.jpeg",
-      "brand_name": "Toyota",
-      "adds_img_1": "https://static.toyotautrust.in/images/banner-blu-certification-1920x450.jpg",
-      "adds_img_2": "https://static.toyotautrust.in/images/extended-warrenty-1920x450.jpg",
-      "adds_img_3": "https://tadvantagewebsites-com.cdn-convertus.com/uploads/sites/61/2023/10/St-Hubert-Toyota-Time-To-Toyota-October-2023-Slider.jpg"
-    },
-    {
-      "id": 2,
-      "brand_img": "https://stockdividendscreener.com/wp-content/uploads/2020/08/ford-brand.jpg",
-      "brand_name": "Ford",
-      "adds_img_1": "",
-      "adds_img_2": "",
-      "adds_img_3": ""
-    },
-    {
-      "id": 3,
-      "brand_img": "https://www.carandbike.com/_next/image?url=https%3A%2F%2Fc.ndtvimg.com%2F2022-01%2F1kcopsc_bmw-generic_625x300_15_January_22.jpg&w=750&q=75",
-      "brand_name": "BMW",
-      "adds_img_1": "",
-      "adds_img_2": "",
-      "adds_img_3": ""
-    },
-    {
-      "id": 4,
-      "brand_img": "https://us.123rf.com/450wm/josefkubes/josefkubes1702/josefkubes170200208/73627305-prague-czech-republic-february-25-mercedes-benz-car-logo-on-dealership-building-on-february-25-2017.jpg?ver=6",
-      "brand_name": "Mercedes-Benz",
-      "adds_img_1": "",
-      "adds_img_2": "",
-      "adds_img_3": ""
-    },
-    {
-      "id": 5,
-      "brand_img": "https://marketingweek.imgix.net/content/uploads/2021/06/18122854/Tesla.jpg",
-      "brand_name": "Tesla",
-      "adds_img_1": "",
-      "adds_img_2": "",
-      "adds_img_3": ""
-    },
-    {
-      "id": 6,
-      "brand_img": "https://s.yimg.com/ny/api/res/1.2/blt69x3Q.uii1oy6hC3yrw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/the_cool_down_737/13cb6d2674c0972ff4cc8c52fb0c02b9",
-      "brand_name": "Honda",
-      "adds_img_1": "",
-      "adds_img_2": "",
-      "adds_img_3": ""
-    }
-  ]
-  
+  {
+    "id": 1,
+    "brand_img": "https://s.car.info/image_files/logos/100/1076.jpg",
+    "brand_name": "Toyota",
+    "adds_img_1": "https://static.toyotautrust.in/images/banner-blu-certification-1920x450.jpg",
+    "adds_img_2": "https://static.toyotautrust.in/images/extended-warrenty-1920x450.jpg",
+    "adds_img_3": "https://tadvantagewebsites-com.cdn-convertus.com/uploads/sites/61/2023/10/St-Hubert-Toyota-Time-To-Toyota-October-2023-Slider.jpg"
+  },
+  {
+    "id": 2,
+    "brand_img": "https://s.car.info/image_files/logos/100/1077.jpg",
+    "brand_name": "Ford",
+    "adds_img_1": "",
+    "adds_img_2": "",
+    "adds_img_3": ""
+  },
+  {
+    "id": 3,
+    "brand_img": "https://s.car.info/image_files/logos/100/1184.jpg",
+    "brand_name": "BMW",
+    "adds_img_1": "",
+    "adds_img_2": "",
+    "adds_img_3": ""
+  },
+  {
+    "id": 4,
+    "brand_img": "https://s.car.info/image_files/logos/100/1078.jpg",
+    "brand_name": "Mercedes-Benz",
+    "adds_img_1": "",
+    "adds_img_2": "",
+    "adds_img_3": ""
+  },
+  {
+    "id": 5,
+    "brand_img": "https://s.car.info/image_files/logos/100/821.jpg",
+    "brand_name": "Tesla",
+    "adds_img_1": "",
+    "adds_img_2": "",
+    "adds_img_3": ""
+  },
+  {
+    "id": 6,
+    "brand_img": "https://s.car.info/image_files/logos/100/1082.jpg",
+    "brand_name": "Honda",
+    "adds_img_1": "",
+    "adds_img_2": "",
+    "adds_img_3": ""
+  }
+]

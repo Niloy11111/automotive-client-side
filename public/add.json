@@ -1,53 +1,52 @@
 [
-    {
-      "id": 1,
-      "brand_img": "https://d9s1543upwp3n.cloudfront.net/wp-content/uploads/2021/12/toyota-company-.jpeg",
-      "brand_name": "Toyota",
+  {
+    "id": 1,
+    "brand_img": "https://d9s1543upwp3n.cloudfront.net/wp-content/uploads/2021/12/toyota-company-.jpeg",
+    "brand_name": "Toyota",
 
-      "adds_img_1": "https://toyotamauritius.com/sites/default/files/popup/Web%20Banner%201600X600px_3.jpg",
+    "adds_img_1": "https://toyotamauritius.com/sites/default/files/popup/Web%20Banner%201600X600px_3.jpg",
 
-      "adds_img_2": "https://toyotamauritius.com/sites/default/files/slides/Web%20Banner%201600X600px_3.jpg",
-      "adds_img_3": "https://toyotamauritius.com/sites/default/files/slides/20210618%20HILUX%20MC%202021%20-%20Lifestyle%201%20%28Web%20Banner%29.jpg"
-    },
-    {
-      "id": 2,
-      "brand_img": "https://stockdividendscreener.com/wp-content/uploads/2020/08/ford-brand.jpg",
-      "brand_name": "Ford",
-      "adds_img_1": "https://www.ford.co.th/content/ford/th/en_th/site-wide-content/billboard-carousels/billboard-homepage-refactored/jcr:content/par/billboard_135558831/imageComponent/image.imgs.full.high.jpg",
-      "adds_img_2": "https://www.ford.co.th/content/ford/th/en_th/site-wide-content/billboard-carousels/billboard-homepage-refactored/jcr:content/par/billboard_1734181448/imageComponent/image.imgs.full.high.jpg",
-      "adds_img_3": "https://www.ford.co.th/content/ford/th/en_th/site-wide-content/billboard-carousels/billboard-homepage-refactored/jcr:content/par/billboard_362192088/imageComponent/image.imgs.full.high.jpg"
-    },
-    {
-      "id": 3,
-      "brand_img": "https://www.carandbike.com/_next/image?url=https%3A%2F%2Fc.ndtvimg.com%2F2022-01%2F1kcopsc_bmw-generic_625x300_15_January_22.jpg&w=750&q=75",
-      "brand_name": "BMW",
-      "adds_img_1": "https://pictures.dealer.com/b/bmwgroup/1147/263a07a49b9890992e371b747908cd78x.jpg?impolicy=resize_crop&w=1900&h=776",
-      "adds_img_2": "https://pictures.dealer.com/b/bmwofalexandriabmw/1571/25335f715c834825f83f35d8393d27c7x.jpg?impolicy=resize_crop&w=1900&h=776",
-      "adds_img_3": "https://pictures.dealer.com/b/bmwgroup/0890/ab0c3a3be67bd7e15ab5465e2aeb43a5x.jpg?impolicy=resize_crop&w=1900&h=776"
-    },
-    {
-      "id": 4,
-      "brand_img": "https://us.123rf.com/450wm/josefkubes/josefkubes1702/josefkubes170200208/73627305-prague-czech-republic-february-25-mercedes-benz-car-logo-on-dealership-building-on-february-25-2017.jpg?ver=6",
-      "brand_name": "Mercedes-Benz",
-      "adds_img_1": "https://di-uploads-pod14.dealerinspire.com/mercedesbenzofgainsville/uploads/2023/10/076-1023-MBG_SL_PreOwnedLineup.jpg",
-      "adds_img_2": "https://di-uploads-pod14.dealerinspire.com/mercedesbenzofgainsville/uploads/2023/10/076-1023-MBG_SL_GLA-250.jpg",
-      "adds_img_3": "https://di-uploads-pod14.dealerinspire.com/mercedesbenzofgainsville/uploads/2023/10/076-1023-MBG-SL-KL-2.jpg"
-    },
-    {
-      "id": 5,
-      "brand_img": "https://marketingweek.imgix.net/content/uploads/2021/06/18122854/Tesla.jpg",
-      "brand_name": "Tesla",
-      "adds_img_1": "https://images.hgmsites.net/lrg/tesla-motors-still-advertising-500-mo-price-despite-revision-of-calculator-settings_100424325_l.jpg",
-      "adds_img_2": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c0f23d58843407.5a0b71aaa9208.jpg",
-      "adds_img_3": "https://mlz1ypajmcke.i.optimole.com/cb:Mstr.17319/w:1280/h:720/q:75/f:best/https://www.feisworld.com/wp-content/uploads/2023/07/Feisworld-blog-thumbnails-59.png"
-    },
-    {
-      "id": 6,
-      "brand_img": "https://s.yimg.com/ny/api/res/1.2/blt69x3Q.uii1oy6hC3yrw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/the_cool_down_737/13cb6d2674c0972ff4cc8c52fb0c02b9",
-      "brand_name": "Honda",
-      "adds_img_1": "https://www.hondaqc.com.ph/cms/img/news-inner-main-image.jpg",
-      "adds_img_2": "https://images.summitmedia-digital.com/sap/images/2020/10/14/honda-topgear-mainimage-1-1602665523.jpg",
-      "adds_img_3": "https://hondaphil.com/app/default/files-module/local/images/news-inner-main-image-1650x750-great-deals-bright-tomorrow-aug2020.jpg"
-    }
-  ]
-  
+    "adds_img_2": "https://toyotamauritius.com/sites/default/files/slides/Web%20Banner%201600X600px_3.jpg",
+    "adds_img_3": "https://toyotamauritius.com/sites/default/files/slides/20210618%20HILUX%20MC%202021%20-%20Lifestyle%201%20%28Web%20Banner%29.jpg"
+  },
+  {
+    "id": 2,
+    "brand_img": "https://stockdividendscreener.com/wp-content/uploads/2020/08/ford-brand.jpg",
+    "brand_name": "Ford",
+    "adds_img_1": "https://di-uploads-pod45.dealerinspire.com/diehlfordbeaver/uploads/2024/01/DiehlFordofBeaver_Banner1_0124_23Edge-1.jpg",
+    "adds_img_2": "https://di-uploads-pod45.dealerinspire.com/diehlfordbeaver/uploads/2024/01/DiehlFordofBeaver_Banner3_0124_23F-150.jpg",
+    "adds_img_3": "https://www.ford.co.th/content/ford/th/en_th/site-wide-content/billboard-carousels/billboard-homepage-refactored/jcr:content/par/billboard_362192088/imageComponent/image.imgs.full.high.jpg"
+  },
+  {
+    "id": 3,
+    "brand_img": "https://www.carandbike.com/_next/image?url=https%3A%2F%2Fc.ndtvimg.com%2F2022-01%2F1kcopsc_bmw-generic_625x300_15_January_22.jpg&w=750&q=75",
+    "brand_name": "BMW",
+    "adds_img_1": "https://pictures.dealer.com/b/bmwgroup/1147/263a07a49b9890992e371b747908cd78x.jpg?impolicy=resize_crop&w=1900&h=776",
+    "adds_img_2": "https://pictures.dealer.com/b/bmwofalexandriabmw/1571/25335f715c834825f83f35d8393d27c7x.jpg?impolicy=resize_crop&w=1900&h=776",
+    "adds_img_3": "https://pictures.dealer.com/b/bmwgroup/0890/ab0c3a3be67bd7e15ab5465e2aeb43a5x.jpg?impolicy=resize_crop&w=1900&h=776"
+  },
+  {
+    "id": 4,
+    "brand_img": "https://us.123rf.com/450wm/josefkubes/josefkubes1702/josefkubes170200208/73627305-prague-czech-republic-february-25-mercedes-benz-car-logo-on-dealership-building-on-february-25-2017.jpg?ver=6",
+    "brand_name": "Mercedes-Benz",
+    "adds_img_1": "https://di-uploads-pod14.dealerinspire.com/mercedesbenzofgainsville/uploads/2023/10/076-1023-MBG_SL_PreOwnedLineup.jpg",
+    "adds_img_2": "https://di-uploads-pod14.dealerinspire.com/mercedesbenzofgainsville/uploads/2023/10/076-1023-MBG_SL_GLA-250.jpg",
+    "adds_img_3": "https://di-uploads-pod14.dealerinspire.com/mercedesbenzofgainsville/uploads/2023/10/076-1023-MBG-SL-KL-2.jpg"
+  },
+  {
+    "id": 5,
+    "brand_img": "https://marketingweek.imgix.net/content/uploads/2021/06/18122854/Tesla.jpg",
+    "brand_name": "Tesla",
+    "adds_img_1": "https://images.hgmsites.net/lrg/tesla-motors-still-advertising-500-mo-price-despite-revision-of-calculator-settings_100424325_l.jpg",
+    "adds_img_2": "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c0f23d58843407.5a0b71aaa9208.jpg",
+    "adds_img_3": "https://mlz1ypajmcke.i.optimole.com/cb:Mstr.17319/w:1280/h:720/q:75/f:best/https://www.feisworld.com/wp-content/uploads/2023/07/Feisworld-blog-thumbnails-59.png"
+  },
+  {
+    "id": 6,
+    "brand_img": "https://s.yimg.com/ny/api/res/1.2/blt69x3Q.uii1oy6hC3yrw--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQyNw--/https://media.zenfs.com/en/the_cool_down_737/13cb6d2674c0972ff4cc8c52fb0c02b9",
+    "brand_name": "Honda",
+    "adds_img_1": "https://www.hondaqc.com.ph/cms/img/news-inner-main-image.jpg",
+    "adds_img_2": "https://images.summitmedia-digital.com/sap/images/2020/10/14/honda-topgear-mainimage-1-1602665523.jpg",
+    "adds_img_3": "https://hondaphil.com/app/default/files-module/local/images/news-inner-main-image-1650x750-great-deals-bright-tomorrow-aug2020.jpg"
+  }
+]

@@ -3,6 +3,7 @@ import Banner from "../../Banner/Banner";
 import BrandsName from "../../BrandsName/BrandsName";
 import Footer from "../../Footer/Footer";
 import Gallary from "../../Gallary/Gallary";
+import Latest from "./Latest/Latest";
 
 const HomePage = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage = () => {
       <Gallary></Gallary>
       <BrandsName></BrandsName>
       <Accessory></Accessory>
+      <Latest></Latest>
       <Footer></Footer>
     </div>
   );

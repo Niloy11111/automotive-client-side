@@ -1,266 +1,351 @@
 import { useContext, useState } from "react";
-import { FcGoogle } from "react-icons/fc";
-import { AuthContext } from "../../AuthProvider/AuthProvider";
+import { useForm } from "react-hook-form";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 
 const Login = () => {
+  const {
+    signInUser,
+    user,
+    createUser,
+    googleSignIn,
+    logOut,
+    handleUpdateProfile,
+  } = useContext(AuthContext);
 
-  const { signInUser, user , createUser, googleSignIn, logOut} = useContext(AuthContext) ;
+  const navigate = useNavigate();
 
+  console.log(user);
+  const [toogle, setToogle] = useState(true);
 
-  console.log(user)
-  const [toogle, setToogle] = useState(true)
+  const [showPassword, setShowPassword] = useState(false);
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
 
-  const [showPassword, setShowPassword] = useState(false)
-
-  const handleLogin = e => {
-
-    e.preventDefault() ;
-    const form = new FormData(e.currentTarget)  
-    const email = form.get('email')
-    const password = form.get('password')
-    const accepted = e.target.terms.checked;
-
-
-
-    if (! /^(?=.*[A-Z])(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/.test(password)) {
-      new Swal("Sorry !", "Password Should be minimum 6 characters and should have one Capital and Special letter!", "error")
-     
-    }
-    else if (!accepted) {
-      new Swal("Sorry !", " please accept our terms and conditions !", "error")
-  
-    }
-    else {
-      createUser(email, password)
-        .then(res => { 
-          console.log(res.user)
-          new Swal("Thank you!", "You have successfully completed your registration!", "success") 
-        } )
-        .catch(error => console.log(error))
-    }  
-
-  };
-
-  
-  const handleSignInUser = e => {
-
-    e.preventDefault();
-    const form = new FormData(e.currentTarget)
-
-    const email = form.get('email')
-    const password = form.get('password')
+  const onSubmitLogin = (data) => {
+    console.log(data);
+    const email = data.email;
+    const password = data.password;
 
     signInUser(email, password)
-       .then(res => {
-        console.log(res.user)
+      .then((res) => {
+        console.log("from sign in", res.user);
+        new Swal("Login Successful!", "Welcome back!", "success");
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
+  };
 
-       })
-       .catch(error => console.log(error))
+  const onSubmitRegister = (data) => {
+    console.log(data);
+    const email = data.email;
+    const password = data.password;
 
-  }
+    console.log(data.photoURL, data.name);
 
+    createUser(email, password)
+      .then((res) => {
+        console.log(res.user);
+
+        handleUpdateProfile(data.name, data.photoURL)
+          .then(() => {
+            navigate("/");
+          })
+
+          .catch((error) => console.log(error));
+      })
+      .catch((error) => console.log(error));
+  };
 
   const handleGoogleLogin = () => {
     googleSignIn()
-    .then(res => { 
-      console.log(res.user)
-      new Swal("Login Successful!", "Welcome back!", "success")
-    })
-    .catch(error => console.log(error))
-
-  }
+      .then((res) => {
+        console.log(res.user);
+        new Swal("Login Successful!", "Welcome back!", "success");
+        navigate("/");
+      })
+      .catch((error) => console.log(error));
+  };
 
   const handleLogOut = () => {
-    logOut()
-  }
+    logOut();
+    navigate("/");
+  };
 
- 
-  
-
-  if(toogle){
-
+  if (toogle) {
     return (
+      <div className=" -mx-12 lg:-mx-72 flex md:flex-row lg:flex-row flex-col h-[92vh]">
+        <div className="md:w-3/4 lg:w-3/4 flex justify-center items-center">
+          <div className="md:w-5/6  lg:w-1/2 mx-auto">
+            <h2 className="text-3xl font-bold font-Montserrat text-center mt-10 lg:mt-0">
+              Register Here
+            </h2>
+            <p className=" font-Montserrat font-medium mt-4 text-center">
+              Get started - it's free. No credit card needed.
+            </p>
 
+            <div>
+              <div
+                onClick={handleGoogleLogin}
+                className="mt-10 cursor-pointer mx-auto w-3/4 justify-center flex items-center gap-2  py-2 text-base border border-[#444] bg-[#FFF]"
+              >
+                <div className="flex items-center gap-2">
+                  <FcGoogle className="text-2xl"></FcGoogle>
+                  <h2 className="font-semibold text-[#00000080] font-Inter">
+                    Continue with Google
+                  </h2>
+                </div>
+              </div>
+              <div className="flex mb-5 items-center gap-2 mt-6 justify-center">
+                <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
+                <p className="text-xl text-[#191A48]">Or</p>
+                <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
+              </div>
+              {/* form */}
+
+              <form className="px-7 lg:px-14 w-3/4 mx-auto">
+                <input
+                  className="border-gray-300 pl-5 bg-[#FFF] py-2 outline-none w-full block border pb-3 mb-8"
+                  type="text"
+                  placeholder="Your Name"
+                  {...register("name", { required: true })}
+                  name="name"
+                />
+                {errors.name && (
+                  <span className="text-red-600">Name is required</span>
+                )}
+
+                <input
+                  className="border-gray-300 pl-5 bg-[#FFF]  py-2 outline-none w-full block border pb-3 mb-8"
+                  type="text"
+                  placeholder="photo URL"
+                  {...register("photoURL", { required: true })}
+                />
+                {errors.photoURL && (
+                  <span className="text-red-600">photo is required</span>
+                )}
+
+                <input
+                  className="border-y-gray-300 bg-[#FFF] w-full outline-none border block pl-5 py-2 mb-5"
+                  type="email"
+                  placeholder="Username or Email"
+                  {...register("email", { required: true })}
+                  name="email"
+                  required
+                />
+                {errors.email && (
+                  <span className="text-red-600">email is required</span>
+                )}
+
+                <div className="relative mb-8">
+                  <input
+                    type={showPassword ? "text" : "password"}
+                    placeholder="password"
+                    className="border border-gray-300 outline-none block pl-5 py-2  bg-[#FFF] w-full"
+                    name="password"
+                    {...register("password", {
+                      required: true,
+                      minLength: 6,
+                      maxLength: 20,
+                      pattern:
+                        /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
+                    })}
+                  />
+
+                  {errors.password?.type === "required" && (
+                    <p className="text-red-600">Password is required</p>
+                  )}
+                  {errors.password?.type === "minLength" && (
+                    <p className="text-red-600">
+                      Password must be at least 6 characters
+                    </p>
+                  )}
+                  {errors.password?.type === "maxLength" && (
+                    <p className="text-red-600">
+                      Password must be less than 20 characters
+                    </p>
+                  )}
+                  {errors.password?.type === "pattern" && (
+                    <p className="text-red-600">
+                      Password must contain at least one uppercase letter, one
+                      lowercase letter, one number, and one special character
+                    </p>
+                  )}
+
+                  <span
+                    onClick={() => setShowPassword(!showPassword)}
+                    className="text-xl cursor-pointer absolute top-3 right-2"
+                  >
+                    {showPassword ? (
+                      <AiFillEye></AiFillEye>
+                    ) : (
+                      <AiFillEyeInvisible></AiFillEyeInvisible>
+                    )}
+                  </span>
+                </div>
+                <input
+                  onClick={handleSubmit(onSubmitRegister)}
+                  className="cursor-pointer py-2 mx-auto w-full mb-4 text-[#FFF] font-Inter  bg-[#0073EA] "
+                  type="submit"
+                  value="Let's Go"
+                />
+
+                <p className="text-center text-base font-Inter">
+                  Already have an account?{" "}
+                  <a
+                    onClick={() => setToogle(!toogle)}
+                    className="text-blue-600 cursor-pointer"
+                  >
+                    {" "}
+                    Login{" "}
+                  </a>{" "}
+                </p>
+              </form>
+
+              {/* form closed */}
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-10 md:mt-0 lg-mt-0 md:w-2/4 lg:w-2/4">
+          <img
+            className="h-full w-full"
+            src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png"
+          ></img>
+        </div>
+      </div>
+    );
+  } else {
+    return (
       <>
+        <div className="-mx-12 lg:-mx-72 flex md:flex-row lg:flex-row flex-col h-[92vh]">
+          <div className="md:w-3/4 lg:w-3/4 flex justify-center items-center">
+            <div className="md:w-5/6 lg:w-1/2 mx-auto">
+              <h2 className="text-3xl font-bold font-Montserrat text-center mt-10 lg-mt=0">
+                Welcome to Carwale
+              </h2>
+              <p className=" font-Montserrat font-medium mt-4 text-center">
+                Get started - it's free. No credit card needed.
+              </p>
 
-      {
-        user && <div className="flex justify-center">
+              <div>
+                <div
+                  onClick={handleGoogleLogin}
+                  className="mt-10 cursor-pointer mx-auto w-3/4 justify-center flex items-center gap-2  py-2 text-base border border-[#444] bg-[#FFF]"
+                >
+                  <div className="flex items-center gap-2">
+                    <FcGoogle className="text-2xl"></FcGoogle>
+                    <h2 className="font-semibold text-[#00000080] font-Inter">
+                      Continue with Google
+                    </h2>
+                  </div>
+                </div>
+                <div className="flex mb-5 items-center gap-2 mt-6 justify-center">
+                  <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
+                  <p className="text-xl text-[#191A48]">Or</p>
+                  <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
+                </div>
+                {/* form */}
 
-         <div className=" border px-14 py-8">
-        
-          <img className="mx-auto rounded-full" src={user.photoURL}></img>
-          <h2 className="mt-4 mb-3 text-[#009EE2] text-xl font-Inter font-semibold "> {user.displayName} </h2>
-          <div className="flex justify-center">
-          <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded bg-[#F15B22]">LogOut</button>
+                <form className="px-7 lg:px-14 w-3/4 mx-auto">
+                  <input
+                    className="border-y-gray-300 bg-[#FFF] w-full outline-none border block pl-5 py-2 mb-5"
+                    type="email"
+                    placeholder="Username or Email"
+                    {...register("email", { required: true })}
+                    name="email"
+                    required
+                  />
+                  {errors.email && (
+                    <span className="text-red-600">email is required</span>
+                  )}
+
+                  <div className="relative mb-8">
+                    <input
+                      type={showPassword ? "text" : "password"}
+                      placeholder="password"
+                      className="border border-gray-300 outline-none block pl-5 py-2  bg-[#FFF] w-full"
+                      name="password"
+                      {...register("password", {
+                        required: true,
+                        minLength: 6,
+                        maxLength: 20,
+                        pattern:
+                          /(?=.*[A-Z])(?=.*[!@#$&*])(?=.*[0-9])(?=.*[a-z])/,
+                      })}
+                    />
+
+                    {errors.password?.type === "required" && (
+                      <p className="text-red-600">Password is required</p>
+                    )}
+                    {errors.password?.type === "minLength" && (
+                      <p className="text-red-600">
+                        Password must be at least 6 characters
+                      </p>
+                    )}
+                    {errors.password?.type === "maxLength" && (
+                      <p className="text-red-600">
+                        Password must be less than 20 characters
+                      </p>
+                    )}
+                    {errors.password?.type === "pattern" && (
+                      <p className="text-red-600">
+                        Password must contain at least one uppercase letter, one
+                        lowercase letter, one number, and one special character
+                      </p>
+                    )}
+
+                    <span
+                      onClick={() => setShowPassword(!showPassword)}
+                      className="text-xl cursor-pointer absolute top-3 right-2"
+                    >
+                      {showPassword ? (
+                        <AiFillEye></AiFillEye>
+                      ) : (
+                        <AiFillEyeInvisible></AiFillEyeInvisible>
+                      )}
+                    </span>
+                  </div>
+                  <input
+                    onClick={handleSubmit(onSubmitLogin)}
+                    className="cursor-pointer py-2 mx-auto w-full mb-4 text-[#FFF] font-Inter  bg-[#0073EA] "
+                    type="submit"
+                    value="Continue"
+                  />
+
+                  <p className="text-center text-base font-Inter ">
+                    Don't have an account?{" "}
+                    <a
+                      onClick={() => setToogle(!toogle)}
+                      className="text-blue-600 cursor-pointer"
+                    >
+                      {" "}
+                      Create an Account
+                    </a>{" "}
+                  </p>
+                </form>
+
+                {/* form closed */}
+              </div>
+            </div>
           </div>
-         </div>
 
+          <div className="mt-10 md:mt-0 lg-mt-0 md:w-2/4 lg:w-2/4">
+            <img
+              className="h-full w-full"
+              src="https://dapulse-res.cloudinary.com/image/upload/monday_platform/signup/signup-right-side-assets-new-flow/welcome-to-monday.png"
+            ></img>
+          </div>
         </div>
-      }
-
-<div className="rounded mt-5 mb-10 -mx-14 flex lg:justify-center lg:items-center h-full lg:h-[84vh]">
-
-
-<div className="lg:border border-[#5fa2bf] lg:p-6">
-
-  <div className="">
-    <form onSubmit={handleLogin} className="px-7 lg:px-14 rounded  lg:w-[570px]">
-      <h2 className="mb-10 text-[#009EE2] pt-7 font-Inter text-4xl font-bold text-center">Register Here</h2>
-
-      <div>
-        <input className="border-[#009EE2] pl-5 bg-[#FFF]  rounded-lg py-3 outline-none w-full block border pb-3 mb-8" type="text" placeholder="Your Name" name="name" />
-
-        <input className="border-[#009EE2] bg-[#FFF] rounded-lg py-3 outline-none w-full border b block pl-5 pb-3 mb-8" type="emial" placeholder="Username or Email" name="email" required />
-
-
-
-        <div className='relative mb-8'>
-
-          <input type={showPassword ? "text" : "password"}
-            placeholder="password"
-            className="input input-bordered border-[#009EE2] rounded-lg py-3 outline-none block pl-5 pb-3  bg-[#FFF] w-full" name='password'
-            required />
-
-          <span onClick={() => setShowPassword(!showPassword)} className='text-xl cursor-pointer absolute top-3 right-2' >
-            {
-              showPassword ? <AiFillEye ></AiFillEye> :
-
-                <AiFillEyeInvisible ></AiFillEyeInvisible>
-            }
-          </span>
-        </div>
-
-        <input className="border-[#009EE2] bg-[#FFF] border  pl-5 rounded-lg py-3 outline-none w-full block border-b pb-3 mb-4" type="password" placeholder="Confirm password" name="confirmPassword" required />
-      </div>
-
-      <div className="mb-3">
-        <input type="checkbox" name="terms" id="terms" />
-        <label className="mt-2 text-[#00000080] font-Inter"> Accept our </label>
-        <a className="text-blue-500">Terms and Conditions</a>
-      </div>
-
-
-      <button className="rounded-lg py-4 mx-auto w-full bg-[#009EE2]  mb-4 text-[#FFF] font-Inter font-semibold">
-        Register
-      </button>
-
-      <p className="text-center text-base font-Inter text-[#00000080]">Already have an account? <a onClick={() => setToogle(! toogle)} className="text-blue-600 cursor-pointer"> Login </a>   </p>
-
-    </form>
-
-
-    <div className="flex mb-5 items-center gap-2 mt-6 justify-center">
-      <div className="bg-[#191A48] h-[1px] w-[200px]">
-      </div>
-      <p className="text-xl text-[#191A48]">Or</p>
-      <div className="bg-[#191A48] h-[1px] w-[200px]">
-      </div>
-    </div>
-
-
-    <div onClick={handleGoogleLogin} className="rounded-full cursor-pointer w-4/5 mx-auto justify-center flex items-center gap-2 mb-7 mt-2 py-3 text-base border border-[#009EE2] bg-[#FFF]">
-      <div className="flex items-center gap-2">
-        <FcGoogle className="text-2xl"></FcGoogle>
-        <h2 className="font-semibold text-[#00000080] font-Inter">Continue with Google</h2>
-      </div>
-    </div >
-
-
-
-  </div>
-
-
-</div>
-
-
-</div>
-
-
-
-      
-     
       </>
-  
-  );
- 
-  } 
-  else{
-    return  <>
-
-{
-        user && <div className="flex justify-center">
-
-         <div className=" border px-14 py-8">
-        
-          <img className="mx-auto rounded-full" src={user.photoURL}></img>
-          <h2 className="mt-4 mb-3 text-[#009EE2] text-xl font-Inter font-semibold "> {user.displayName} </h2>
-          <div className="flex justify-center">
-          <button onClick={handleLogOut} className="text-xl font-medium text-[#FFF] px-5 font-Inter py-2 rounded-lg bg-gradient-to-r from-[#F00] to-[#FF8938]">LogOut</button>
-          </div>
-         </div>
-
-        </div>
-      }
-    
-    <div className=" rounded flex justify-center items-center h-[83vh]">
-       
-       <div className="lg:border border-[#5fa2bf]  -mt-20 lg:p-6">
-
-          <div>
-          <form onSubmit={handleSignInUser} className="px-8 lg:px-14 rounded lg:w-[570px]">
-               <h2 className="mb-14 text-[#009EE2] pt-9 font-Inter text-4xl font-bold text-center">Login Here</h2>
-
-               <div>
-             
-                   <input className="border-[#009EE2] bg-[#FAFAFB] rounded-lg py-3 outline-none w-full border b block pl-5 pb-3 mb-8" type="emial" placeholder="Username or Email" name="email" required/>
-
-                   <input className="border-[#009EE2] bg-[#FAFAFB] border  rounded-lg py-3 outline-none w-full block pl-5 pb-3 mb-10" type="password" placeholder="password" name="password" required/>
-
-
-               </div>
-
-               <button className="rounded-lg py-4 mx-auto w-full bg-[#009EE2]  mb-4 text-[#FFF] font-Inter font-semibold">
-                  Login
-               </button>
-
-               <p className="text-center text-base font-Inter text-[#191A48]">Don't have an account? <a onClick={() => setToogle(! toogle)} className="text-blue-600 cursor-pointer"> Create an Account</a> </p>
-       
-           </form>
-
-           
-         <div className="flex mb-5 items-center gap-2 mt-6 justify-center">
-         <div className="bg-[#191A48] h-[1px] w-[200px]">
-               </div>
-               <p className="text-xl text-[#191A48]">Or</p>
-               <div className="bg-[#191A48] h-[1px] w-[200px]">
-               </div>
-         </div>
-
-
-         <div onClick={handleGoogleLogin} className=" rounded-full cursor-pointer w-4/5 mx-auto justify-center flex items-center gap-2 mb-12 mt-2 py-3 text-base border border-[#009EE2] bg-[#FFF]">
-         <div className="flex items-center gap-2">
-         <FcGoogle className="text-2xl"></FcGoogle>
-           <h2 className="font-semibold text-[#191A48] font-Inter">Continue with Google</h2> 
-         </div>
-         </div >
-
-
-         
-          </div>   
-
-          
-       </div>
-
-
-   </div>
-    </>
-
+    );
   }
-   
-}
-
+};
 
 export default Login;
