@@ -154,7 +154,7 @@ const UpdateProduct = () => {
             <label className="flex-1" htmlFor="">
               <h4 className="mb-2 font-Inter text-lg  font-semibold">Rating</h4>
               <input
-                className=" pl-5 bg-[#FFF]  rounded py-3 outline-none rounded-full w-full block border pb-3 mb-6"
+                className=" pl-5 bg-[#FFF]   py-3 outline-none rounded-full w-full block border pb-3 mb-6"
                 type="text"
                 placeholder="Rating"
                 defaultValue={rating}
@@ -180,7 +180,7 @@ const UpdateProduct = () => {
             ></textarea>
           </label>
 
-          <button className="w-full bg-[#C9F620] py-3 rounded  text-base font-Inter font-medium rounded-full">
+          <button className="w-full bg-[#C9F620] py-3 text-base font-Inter font-medium rounded-full">
             {" "}
             Submit{" "}
           </button>

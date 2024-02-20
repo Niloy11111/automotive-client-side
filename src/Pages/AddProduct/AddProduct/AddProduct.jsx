@@ -1,6 +1,6 @@
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
-import UseAxiosPublic from "../Hooks/UseAxiosPublic";
+import UseAxiosPublic from "../../../Hooks/UseAxiosPublic";
 
 const AddProduct = () => {
   const axiosPublic = UseAxiosPublic();

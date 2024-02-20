@@ -1,11 +1,12 @@
 import { createBrowserRouter } from "react-router-dom";
-import AddProduct from "../AddProduct/AddProduct";
+
 import ErrorPage from "../ErrorPage/ErrorPage";
+import AddProduct from "../Pages/AddProduct/AddProduct/AddProduct";
 import HomePage from "../Pages/Home/HomePage";
 import MyCart from "../Pages/Home/MyCart/MyCart";
 import Login from "../Pages/Login/Login";
+import UpdateProduct from "../Pages/UpdateProduct/UpdateProducts/UpdateProduct";
 import Root from "../Root/Root";
-import UpdateProduct from "../UpdateProducts/UpdateProduct";
 import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
 import ProductList from "../components/ProductList/ProductList";
 import ProductDetails from "../components/ProductsDetails/ProductDetails";
