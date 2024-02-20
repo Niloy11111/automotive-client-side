@@ -10,7 +10,7 @@ const MyCart = () => {
   const [carts, setCarts] = useState(loadedcarts);
   return (
     <div className="pb-20">
-      <h2 className="text-4xl  my-20 font-Inter text-center font-bold">
+      <h2 className="text-3xl  text-center lg:text-4xl font-Inter font-extrabold uppercase my-14">
         Your Selected Products
       </h2>
 

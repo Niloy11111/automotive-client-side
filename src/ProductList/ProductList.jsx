@@ -16,8 +16,8 @@ const ProductList = () => {
 
   if (products.length > 0) {
     return (
-      <div className="">
-        <h2 className="mb-10 dark:text-white lg:my-16 text-4xl lg:text-5xl font-bold font-Inter text-center text-[#100F0F] ">
+      <div className="dark:text-[#0B0E01]">
+        <h2 className="mb-10  dark:text-white lg:my-16 text-4xl lg:text-5xl font-bold font-Inter text-center  ">
           {" "}
           Our Popular Products{" "}
         </h2>

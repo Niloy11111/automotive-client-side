@@ -13,20 +13,18 @@ const SingleLatest = ({ product }) => {
     rating,
   } = product;
   return (
-    <div className="bg-[#FFFBF8]">
-      <div className="  hover:shadow-xl transition duration-150">
-        <img className="h-[170px] w-full" src={photoURL}></img>
+    <div className="">
+      <div className="  ">
+        <img className="h-[220px] rounded-3xl w-full" src={photoURL}></img>
 
-        <div className="p-3">
-          <h3 className=" font-Inter font-semibold mt-2">{productName}</h3>
+        <div className="p-3 ">
+          <h3 className=" font-Inter  uppercase font-bold ">{productName}</h3>
 
-          <div className="flex justify-between ">
+          <div className="flex justify-between my-4">
             <div>
-              <h3 className="text-[#100F0F] text-sm font-Inter font-medium">
-                {brandName}
-              </h3>
+              <h3 className=" text-sm font-Inter font-medium">{brandName}</h3>
 
-              <h3 className="text-[#100F0F] mb-2 text-sm font-Inter font-semibold">
+              <h3 className=" text-sm font-Inter font-semibold">
                 {productType}
               </h3>
             </div>
@@ -38,19 +36,12 @@ const SingleLatest = ({ product }) => {
               </p>
             </div>
           </div>
-          <div className="flex justify-between ">
+          <div className="w-full">
             <Link to={`/details/${_id}`}>
-              <button className="w-full text-sm mt-1  px-3 py-1 text-[#FFF]  font-Inter bg-[#6473FF] rounded">
+              <button className="w-full text-sm mt-1 py-2   font-Inter bg-[#D4FCE0] dark:text-[#0B0E01] rounded">
                 Details
               </button>
             </Link>
-
-            {/* <Link to={`/updateProducts/${_id}`}>
-              {" "}
-              <button className="w-full text-sm mt-1 px-3 py-1 text-[#FFF]  font-Inter bg-[#7A5CFA] ">
-                Update
-              </button>
-            </Link> */}
           </div>
         </div>
       </div>

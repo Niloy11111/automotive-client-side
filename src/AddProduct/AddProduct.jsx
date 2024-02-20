@@ -32,44 +32,9 @@ const AddProduct = () => {
     }
   };
 
-  // handleAddProduct = (e) => {
-  //   e.preventDefault();
-  //   const form = e.target;
-  //   const photoURL = form.photoURL.value;
-  //   const productName = form.productName.value;
-  //   const brandName = form.brandName.value;
-  //   const productType = form.productType.value;
-  //   const productPrice = form.productPrice.value;
-  //   const description = form.description.value;
-  //   const rating = form.rating.value;
-
-  //   const productInfo = {
-  //     photoURL,
-  //     productName,
-  //     brandName,
-  //     productType,
-  //     productPrice,
-  //     description,
-  //     rating,
-  //   };
-  //   console.log(productInfo);
-
-  //   fetch(" https://automotive-server-side-peach.vercel.app/addProduct", {
-  //     method: "POST",
-  //     headers: {
-  //       "content-type": "application/json",
-  //     },
-  //     body: JSON.stringify(productInfo),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log(data);
-  //     });
-  // };
-
   return (
     <div className="mt-20 h-[86vh]">
-      <h2 className="text-3xl font-Inter font-bold text-center mb-7  ">
+      <h2 className="text-3xl  text-center lg:text-4xl font-Inter font-extrabold uppercase mb-14">
         Let's Add a Product
       </h2>
       <form className="">
@@ -80,7 +45,7 @@ const AddProduct = () => {
             </h4>
             <input
               {...register("photoURL", { required: true })}
-              className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-6"
+              className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-6 rounded-3xl"
               type="text"
               placeholder="photoURL"
             />
@@ -93,7 +58,7 @@ const AddProduct = () => {
               </h4>
               <input
                 {...register("productName", { required: true })}
-                className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4"
+                className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4 rounded-3xl"
                 type="text"
                 placeholder="productName"
                 name="productName"
@@ -101,19 +66,6 @@ const AddProduct = () => {
               />
             </label>
 
-            {/* <label className="flex-1" htmlFor="">
-              <h4 className="mb-2 text-lg font-Inter  font-semibold ">
-                Brand Name
-              </h4>
-              <input
-                {...register("brandName", { required: true })}
-                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4"
-                type="text"
-                placeholder="Brand Name"
-                name="brandName"
-                id=""
-              />
-            </label> */}
             <div className="flex-1">
               <h4 className="mb-2 text-lg font-Inter  font-semibold ">
                 Brand Name
@@ -122,7 +74,7 @@ const AddProduct = () => {
               <select
                 defaultValue="default"
                 {...register("brandName", { required: true })}
-                className=" pl-5    py-2 outline-none w-full block border  pb-3 mb-4"
+                className=" pl-5    py-2 outline-none w-full block border  pb-3 mb-4 rounded-3xl"
                 type="text"
                 placeholder="Brand Name"
                 name="brandName"
@@ -148,7 +100,7 @@ const AddProduct = () => {
               </h4>
               <input
                 {...register("productType", { required: true })}
-                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4"
+                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4 rounded-3xl"
                 type="text"
                 placeholder="Product Type"
                 name="productType"
@@ -162,7 +114,7 @@ const AddProduct = () => {
               </h4>
               <input
                 {...register("productPrice", { required: true })}
-                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4"
+                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4 rounded-3xl"
                 type="text"
                 placeholder="Product Price"
                 name="productPrice"
@@ -174,7 +126,7 @@ const AddProduct = () => {
               <h4 className="mb-2 text-lg font-Inter font-semibold">Rating</h4>
               <input
                 {...register("rating", { required: true })}
-                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-6"
+                className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-6 rounded-3xl"
                 type="text"
                 placeholder="Rating"
                 name="rating"
@@ -190,7 +142,7 @@ const AddProduct = () => {
 
             <textarea
               {...register("description", { required: true })}
-              className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4"
+              className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4 rounded-3xl"
               type="text"
               placeholder="Short Description"
               name="description"
@@ -201,7 +153,7 @@ const AddProduct = () => {
 
           <button
             onClick={handleSubmit(onSubmitAddProduct)}
-            className="w-full bg-[#6473FF] py-2 text-white  text-base font-Inter font-medium"
+            className="w-full bg-[#C9F620] py-2   text-base font-Inter font-medium rounded-3xl"
           >
             {" "}
             Add Product{" "}

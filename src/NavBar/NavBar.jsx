@@ -11,11 +11,11 @@ const NavBar = () => {
   };
 
   return (
-    <div className="shadow-lg  ">
-      <div className=" flex justify-between mx-12 lg:mx-72 py-4   flex-col lg:flex-row    ">
+    <div className="">
+      <div className=" flex justify-between py-4   flex-col lg:flex-row    ">
         <div className="flex items-center">
           <h2 className="font-Inter font-bold text-2xl dark:text-white">
-            <span className="text-red-500">car</span>wale
+            RevAuto
           </h2>
         </div>
 
@@ -31,7 +31,7 @@ const NavBar = () => {
 
               {/* sun icon */}
               <svg
-                className="swap-on dark:text-white fill-current w-10 h-10"
+                className="swap-on  dark:text-white fill-current w-10 h-10"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
               >
@@ -54,8 +54,8 @@ const NavBar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "bg-[#6473FF] dark:text-white text-white  px-3 py-1 "
-                  : "hover:bg-[#6473FF] transition duration-100 hover:text-white dark:text-white  px-3 py-1 "
+                  ? "bg-[#D4FCE0] dark:text-[#0B0E01] px-3 py-1 "
+                  : "hover:bg-[#EEF2E0] transition duration-100  dark:text-white dark:hover:text-[#0B0E01]   px-3 py-1 "
               }
             >
               <li className="">Home</li>
@@ -67,8 +67,8 @@ const NavBar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "bg-[#6473FF] text-white  px-3 py-1 "
-                  : "hover:bg-[#6473FF] transition duration-100 hover:text-white dark:text-white  px-3 py-1"
+                  ? "bg-[#D4FCE0] px-3 py-1 "
+                  : "hover:bg-[#EEF2E0] transition duration-100  dark:text-white dark:hover:text-[#0B0E01] px-3 py-1"
               }
             >
               <li>Add Product</li>
@@ -80,8 +80,8 @@ const NavBar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "  bg-[#6473FF] text-white  px-3 py-1"
-                  : "hover:bg-[#6473FF] transition duration-100 hover:text-white dark:text-white  px-3 py-1"
+                  ? "  bg-[#D4FCE0] px-3 py-1"
+                  : "hover:bg-[#EEF2E0] transition duration-100  dark:text-white  dark:hover:text-[#0B0E01]  px-3 py-1"
               }
             >
               <li>My Cart</li>
@@ -118,8 +118,8 @@ const NavBar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? " bg-[#6473FF] text-white  px-3 py-1"
-                    : "hover:bg-[#6473FF] transition duration-100 hover:text-white  px-3 py-1"
+                    ? " bg-[#D4FCE0] px-3 py-1"
+                    : "hover:bg-[#EEF2E0] transition duration-100   px-3 py-1 dark:text-white dark:hover:text-[#0B0E01] "
                 }
               >
                 <li>Login</li>

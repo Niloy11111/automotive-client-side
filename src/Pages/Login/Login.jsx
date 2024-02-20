@@ -93,7 +93,7 @@ const Login = () => {
             <div>
               <div
                 onClick={handleGoogleLogin}
-                className="mt-10 cursor-pointer mx-auto w-3/4 justify-center flex items-center gap-2  py-2 text-base border border-[#444] bg-[#FFF]"
+                className="my-5 cursor-pointer mx-auto w-3/4 justify-center flex items-center gap-2  py-2 text-base border border-[#444] bg-[#FFF]"
               >
                 <div className="flex items-center gap-2">
                   <FcGoogle className="text-2xl"></FcGoogle>
@@ -102,16 +102,12 @@ const Login = () => {
                   </h2>
                 </div>
               </div>
-              <div className="flex mb-5 items-center gap-2 mt-6 justify-center">
-                <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
-                <p className="text-xl text-[#191A48]">Or</p>
-                <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
-              </div>
-              {/* form */}
+
+              <h2 className="text-center mb-3">Or Login With email</h2>
 
               <form className="px-7 lg:px-14 w-3/4 mx-auto">
                 <input
-                  className="border-gray-300 pl-5 bg-[#FFF] py-2 outline-none w-full block border pb-3 mb-8"
+                  className="border-gray-300 pl-5 bg-[#FFF] py-2 outline-none w-full block border pb-3 mb-4 rounded"
                   type="text"
                   placeholder="Your Name"
                   {...register("name", { required: true })}
@@ -122,7 +118,7 @@ const Login = () => {
                 )}
 
                 <input
-                  className="border-gray-300 pl-5 bg-[#FFF]  py-2 outline-none w-full block border pb-3 mb-8"
+                  className="border-gray-300 pl-5 bg-[#FFF]  py-2 outline-none w-full block border pb-3 mb-4 rounded"
                   type="text"
                   placeholder="photo URL"
                   {...register("photoURL", { required: true })}
@@ -143,7 +139,7 @@ const Login = () => {
                   <span className="text-red-600">email is required</span>
                 )}
 
-                <div className="relative mb-8">
+                <div className="relative mb-4 rounded">
                   <input
                     type={showPassword ? "text" : "password"}
                     placeholder="password"
@@ -191,7 +187,7 @@ const Login = () => {
                 </div>
                 <input
                   onClick={handleSubmit(onSubmitRegister)}
-                  className="cursor-pointer py-2 mx-auto w-full mb-4 text-[#FFF] font-Inter  bg-[#0073EA] "
+                  className="cursor-pointer py-2 mx-auto w-full mb-4  font-Inter  bg-[#C9F620] "
                   type="submit"
                   value="Let's Go"
                 />
@@ -200,7 +196,7 @@ const Login = () => {
                   Already have an account?{" "}
                   <a
                     onClick={() => setToogle(!toogle)}
-                    className="text-blue-600 cursor-pointer"
+                    className="text-[#C9F620] cursor-pointer rounded"
                   >
                     {" "}
                     Login{" "}
@@ -228,16 +224,16 @@ const Login = () => {
           <div className="md:w-3/4 lg:w-3/4 flex justify-center items-center">
             <div className="md:w-5/6 lg:w-1/2 mx-auto">
               <h2 className="text-3xl font-bold font-Montserrat text-center mt-10 lg-mt=0">
-                Welcome to Carwale
+                Welcome to RevAuto
               </h2>
-              <p className=" font-Montserrat font-medium mt-4 text-center">
+              <p className=" font-Montserrat font-medium  text-center">
                 Get started - it's free. No credit card needed.
               </p>
 
               <div>
                 <div
                   onClick={handleGoogleLogin}
-                  className="mt-10 cursor-pointer mx-auto w-3/4 justify-center flex items-center gap-2  py-2 text-base border border-[#444] bg-[#FFF]"
+                  className="my-5 cursor-pointer mx-auto w-3/4 justify-center flex items-center gap-2  py-2 text-base border border-[#444] bg-[#FFF]"
                 >
                   <div className="flex items-center gap-2">
                     <FcGoogle className="text-2xl"></FcGoogle>
@@ -246,16 +242,12 @@ const Login = () => {
                     </h2>
                   </div>
                 </div>
-                <div className="flex mb-5 items-center gap-2 mt-6 justify-center">
-                  <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
-                  <p className="text-xl text-[#191A48]">Or</p>
-                  <div className="bg-[#191A48] h-[1px] w-[200px]"></div>
-                </div>
-                {/* form */}
+
+                <h2 className="text-center mb-3">Or Login With email</h2>
 
                 <form className="px-7 lg:px-14 w-3/4 mx-auto">
                   <input
-                    className="border-y-gray-300 bg-[#FFF] w-full outline-none border block pl-5 py-2 mb-5"
+                    className="border-y-gray-300 bg-[#FFF] w-full outline-none border block pl-5 py-2 mb-5 rounded"
                     type="email"
                     placeholder="Username or Email"
                     {...register("email", { required: true })}
@@ -266,11 +258,11 @@ const Login = () => {
                     <span className="text-red-600">email is required</span>
                   )}
 
-                  <div className="relative mb-8">
+                  <div className="relative mb-4 rounded">
                     <input
                       type={showPassword ? "text" : "password"}
                       placeholder="password"
-                      className="border border-gray-300 outline-none block pl-5 py-2  bg-[#FFF] w-full"
+                      className="border border-gray-300 outline-none block pl-5 py-2  bg-[#FFF] w-full rounded"
                       name="password"
                       {...register("password", {
                         required: true,
@@ -314,7 +306,7 @@ const Login = () => {
                   </div>
                   <input
                     onClick={handleSubmit(onSubmitLogin)}
-                    className="cursor-pointer py-2 mx-auto w-full mb-4 text-[#FFF] font-Inter  bg-[#0073EA] "
+                    className="cursor-pointer py-2 mx-auto w-full mb-4  font-Inter  bg-[#C9F620] rounded"
                     type="submit"
                     value="Continue"
                   />
@@ -323,7 +315,7 @@ const Login = () => {
                     Don't have an account?{" "}
                     <a
                       onClick={() => setToogle(!toogle)}
-                      className="text-blue-600 cursor-pointer"
+                      className="text-[#C9F620] cursor-pointer"
                     >
                       {" "}
                       Create an Account

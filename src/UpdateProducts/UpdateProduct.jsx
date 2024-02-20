@@ -62,7 +62,7 @@ const UpdateProduct = () => {
   };
   return (
     <div className="mt-20 pb-20">
-      <h2 className="text-3xl dark:text-white font-Inter font-bold text-center mb-7  text-[#1C1B1B]">
+      <h2 className="text-3xl  text-center lg:text-4xl font-Inter font-extrabold uppercase mb-14">
         Update Your Product
       </h2>
       <form className="" onSubmit={handleUpdateProduct}>
@@ -72,7 +72,7 @@ const UpdateProduct = () => {
               Product Image
             </h4>
             <input
-              className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4"
+              className=" pl-5   py-2 outline-none rounded-full w-full block border   pb-3 mb-4"
               type="text"
               placeholder="photoURL"
               defaultValue={photoURL}
@@ -88,7 +88,7 @@ const UpdateProduct = () => {
                 Product Name
               </h4>
               <input
-                className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4"
+                className=" pl-5   py-2 outline-none rounded-full w-full block border   pb-3 mb-4"
                 type="text"
                 placeholder="productName"
                 defaultValue={productName}
@@ -103,7 +103,7 @@ const UpdateProduct = () => {
 
               <select
                 defaultValue="default"
-                className=" pl-5    py-2 outline-none w-full block border  pb-3 mb-4"
+                className=" pl-5    py-2 outline-none rounded-full w-full block border  pb-3 mb-4"
                 type="text"
                 placeholder="Brand Name"
                 defaultValue={brandName}
@@ -129,7 +129,7 @@ const UpdateProduct = () => {
                 Product Types
               </h4>
               <input
-                className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4"
+                className=" pl-5   py-2 outline-none rounded-full w-full block border   pb-3 mb-4"
                 type="text"
                 placeholder="Product Type"
                 defaultValue={productType}
@@ -143,7 +143,7 @@ const UpdateProduct = () => {
                 Product Price
               </h4>
               <input
-                className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4"
+                className=" pl-5   py-2 outline-none rounded-full w-full block border   pb-3 mb-4"
                 type="text"
                 placeholder="Product Price"
                 defaultValue={productPrice}
@@ -154,7 +154,7 @@ const UpdateProduct = () => {
             <label className="flex-1" htmlFor="">
               <h4 className="mb-2 font-Inter text-lg  font-semibold">Rating</h4>
               <input
-                className=" pl-5 bg-[#FFF]  rounded py-3 outline-none w-full block border pb-3 mb-6"
+                className=" pl-5 bg-[#FFF]  rounded py-3 outline-none rounded-full w-full block border pb-3 mb-6"
                 type="text"
                 placeholder="Rating"
                 defaultValue={rating}
@@ -170,7 +170,7 @@ const UpdateProduct = () => {
             </h4>
 
             <textarea
-              className=" pl-5   py-2 outline-none w-full block border  pb-3 mb-4"
+              className=" pl-5   py-2 outline-none rounded-3xl w-full block border  pb-3 mb-4"
               type="text"
               placeholder="Short Description"
               name="description"
@@ -180,21 +180,7 @@ const UpdateProduct = () => {
             ></textarea>
           </label>
 
-          {/* <label htmlFor="">
-            <h4 className="mb-2 font-Inter text-lg  font-semibold">
-              Short Description
-            </h4>
-            <input
-              className=" pl-5   py-2 outline-none w-full block border   pb-3 mb-4"
-              type="text"
-              placeholder="Short Description"
-              defaultValue={description}
-              name="description"
-              id=""
-            />
-          </label> */}
-
-          <button className="w-full bg-[#6473FF] py-3 rounded text-[#FFF] text-base font-Inter font-medium">
+          <button className="w-full bg-[#C9F620] py-3 rounded  text-base font-Inter font-medium rounded-full">
             {" "}
             Submit{" "}
           </button>

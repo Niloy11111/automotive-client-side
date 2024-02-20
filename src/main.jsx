@@ -10,7 +10,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <div className="">
+  <div className=" bg-[#FAFEEC] text-[#0B0E01] dark:bg-[#191919] font-Inter">
     <React.StrictMode>
       <AuthProvider>
         <QueryClientProvider client={queryClient}>

@@ -53,7 +53,7 @@ const ProductDetails = () => {
   return (
     <div className="h-[88vh] ">
       <div className=" gap-12 items-center">
-        <h2 className="text-[#100F0F] dark:text-white mb-3 text-2xl  font-Inter font-bold mt-10">
+        <h2 className=" dark: mb-3 text-2xl  font-Inter font-bold mt-10">
           {productName}
         </h2>
         <img className="rounded w-[700px] h-[500px]" src={photoURL}></img>
@@ -66,7 +66,7 @@ const ProductDetails = () => {
 
           <button
             onClick={handleAddToCart}
-            className="mt-4  px-6 py-2 font-Inter font-semibold text-[#FFF] bg-[#DC3545]"
+            className="mt-4  px-6 py-2 font-Inter font-semibold  bg-[#C9F620]"
           >
             Add to Cart
           </button>

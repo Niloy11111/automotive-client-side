@@ -4,12 +4,16 @@ import BrandsName from "../../BrandsName/BrandsName";
 import Footer from "../../Footer/Footer";
 import Gallary from "../../Gallary/Gallary";
 import Latest from "./Latest/Latest";
+import Why from "./Why";
 
 const HomePage = () => {
   return (
-    <div data-aos="fade-up" className=" ">
+    <div className=" ">
       <Banner></Banner>
       <Gallary></Gallary>
+
+      <Why></Why>
+
       <BrandsName></BrandsName>
       <Accessory></Accessory>
       <Latest></Latest>

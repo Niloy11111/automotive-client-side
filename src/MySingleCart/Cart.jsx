@@ -47,27 +47,33 @@ const Cart = ({ cart, carts, setCarts }) => {
   };
 
   return (
-    <div className="bg-[#FFF] dark:bg-neutral-800  border  border-[#E7E7E7]">
-      <img className="lg:h-[250px] w-full" src={photoURL}></img>
+    <div className="bg-[#EDFDE8] p-4 rounded-3xl dark:bg-neutral-800  border  border-[#E7E7E7]">
+      <img className="lg:h-[250px] rounded-xl w-full" src={photoURL}></img>
       <div className="p-3">
-        <h2 className="mt-2 text-[#111] dark:text-white text-xl font-semibold font-Inter">
+        <h2 className="mt-2 dark:text-white text-xl font-semibold font-Inter">
           {productName}
         </h2>
 
         <p className="mt-2 text-sm font-Inter">{description.slice(0, 229)}</p>
 
-        <h2 className="mt-2 ">
-          <span className="text-[#D72050]">*</span>
-          {rating}
-          <span className="text-[#D72050]">*</span>
-        </h2>
+        <div className="flex justify-between">
+          <div>
+            <h2 className="mt-2 flex gap-2  items-center">
+              <img
+                className="w-[30px]"
+                src="https://i.ibb.co/5GVc6wy/stars.png"
+              ></img>
+              {rating}
+            </h2>
+          </div>
 
-        <button
-          onClick={() => handleDeleteProduct(_id)}
-          className="bg-[#D72050] mt-3 font-semibold font-Inter px-7 py-2 text-[#FFF]"
-        >
-          Delete
-        </button>
+          <button
+            onClick={() => handleDeleteProduct(_id)}
+            className="bg-[#CAFCDD] px-4 py-2  rounded hover:shadow-lg hover:translate-x-1 transition-all duration-300 "
+          >
+            Delete
+          </button>
+        </div>
       </div>
     </div>
   );

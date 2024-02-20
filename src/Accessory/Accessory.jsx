@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const Accessory = () => {
   return (
     <div
-      className="-mx-12 lg:-mx-72 h-[290px] lg:h-[65vh] rounded lg:rounded-none"
+      className="h-[290px] lg:h-[55vh] rounded lg:rounded-3xl"
       style={{
         backgroundImage: `URL("https://www.bmwusa.com/content/dam/bmwusa/common/fma/new-aftersales-fmas-assets/bmw-accessory-center/BMW-AccCen-Section-FMA-1280.jpg")`,
         backgroundRepeat: "no-repeat",
@@ -11,19 +11,16 @@ const Accessory = () => {
         backgroundSize: "cover",
       }}
     >
-      <div className="ml-72 pt-20">
-        <h2 className="text-[#FFF] text-5xl">
-          THW BMW <br />
-          ACCESSORY CENTER
-        </h2>
-        <h3 className="mt-7 text-xl text-[#FFF]">
-          Customize your SUV before delivery
-        </h3>
-        <NavLink to="/login">
-          <button className="px-6 lg:px-12 text-[black] font-extrabold py-3 lg:py-3 text-lg font-Inter mt-6 bg-[#FFF]">
-            Learn More
-          </button>{" "}
-        </NavLink>
+      <div className="flex justify-center items-center dark:text-[#0B0E01]">
+        <div className="mt-44 bg-[#EDFDE8] px-8 py-5 rounded-3xl">
+          <h2 className=" text-xl font-extrabold ">THW BMW ACCESSORY CENTER</h2>
+          <h3 className=" text-center">Customize your SUV before delivery</h3>
+          <NavLink to="/login" className="flex justify-center">
+            <button className="px-4  rounded py-2  font-Inter mt-2 bg-[#CAFCDD] ">
+              Learn More
+            </button>{" "}
+          </NavLink>
+        </div>
       </div>
     </div>
   );

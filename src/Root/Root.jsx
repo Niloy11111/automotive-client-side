@@ -3,10 +3,10 @@ import NavBar from "../NavBar/NavBar";
 
 const Root = () => {
   return (
-    <div className="">
+    <div className="w-2/3 mx-auto dark:text-white">
       <NavBar></NavBar>
 
-      <div className="mx-12 lg:mx-72">
+      <div>
         <Outlet></Outlet>
       </div>
     </div>

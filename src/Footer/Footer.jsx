@@ -2,12 +2,12 @@ import { FaFacebook, FaInstagramSquare, FaTwitterSquare } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="pb-10 bg-[#0D1B3E] pt-12  -mx-12 lg:-mx-72">
+    <div className=" rounded-xl bg-[#EEF2E0] pt-12 text-[#0B0E01]">
       <div className="pt-10 lg:w-7/12 mx-auto">
-        <div className="flex lg:flex-row flex-col md:flex-row  lg:justify-between w-3/4 md:w-full ld:w-3/4 my-10 mx-auto md:justify-center md:gap-14 lg:gap-0">
-          <div className="text-white ">
-            <h2 className="text-white mb-5 font-semibold">Our Brands </h2>
-            <ul className="text-gray-300 space-y-3">
+        <div className="flex lg:flex-row flex-col md:flex-row  lg:justify-between w-3/4 md:w-full ld:w-3/4 mb-10 mx-auto md:justify-center md:gap-14 lg:gap-0">
+          <div className=" ">
+            <h2 className=" mb-5 font-semibold">Our Brands </h2>
+            <ul className=" space-y-3">
               <li>
                 <a className="link link-hover">Auto Credit Express</a>{" "}
               </li>
@@ -26,9 +26,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="text-white lg:mb-0 mb-5 font-semibold">
-            <h2 className="text-white mb-5 font-semibold">Company</h2>
-            <ul className="text-gray-300 space-y-3">
+          <div className=" lg:mb-0 mb-5 font-semibold">
+            <h2 className=" mb-5 font-semibold">Company</h2>
+            <ul className=" space-y-3">
               <li>
                 {" "}
                 <a className="link link-hover">About us</a>{" "}
@@ -60,9 +60,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-white lg:mb-0 mb-5 font-semibold">
-            <h2 className="text-white mb-5 font-semibold">Buyer Resources</h2>
-            <ul className="text-gray-300 space-y-3">
+          <div className=" lg:mb-0 mb-5 font-semibold">
+            <h2 className=" mb-5 font-semibold">Buyer Resources</h2>
+            <ul className=" space-y-3">
               <li>
                 {" "}
                 <a className="link link-hover">Car Pricing</a>{" "}
@@ -86,9 +86,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="text-white lg:mb-0 mb-5 font-semibold">
-            <h2 className="text-white mb-5 font-semibold">Popular Brands</h2>
-            <ul className="text-gray-300 space-y-3">
+          <div className=" lg:mb-0 mb-5 font-semibold">
+            <h2 className=" mb-5 font-semibold">Popular Brands</h2>
+            <ul className=" space-y-3">
               <li>
                 {" "}
                 <a className="link link-hover">For Dealers </a>{" "}
@@ -121,35 +121,30 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col lg:justify-evenly  border-t pt-10 lg:pt-20 space-y-3">
+        <div className="flex lg:flex-row flex-col lg:justify-evenly  border-t border-[#C9F620] pt-4 pb-14 space-y-3">
           <div className="flex items-center gap-2">
-            <h2 className="text-white text-lg font-Inter font-semibold">
-              carwale
-            </h2>
+            <h2 className=" text-lg font-Inter font-semibold">RevAuto</h2>
           </div>
-          {/* <a className="text-white text-center " href="">
-            Carwale
-          </a> */}
 
-          <a className="text-white text-center " href="">
+          <a className=" text-center " href="">
             Terms of Service
           </a>
-          <a className="text-white text-center" href="">
-            @2015 - 2023 CARWALE INC.
+          <a className=" text-center" href="">
+            @2015 - 2023 RevAuto INC.
           </a>
 
           <div className="flex gap-1 justify-center">
             <a href="https:/facebook.com">
               {" "}
-              <FaFacebook className="text-3xl text-white"></FaFacebook>{" "}
+              <FaFacebook className="text-3xl "></FaFacebook>{" "}
             </a>
             <a href="https:/instagram.com">
               {" "}
-              <FaInstagramSquare className="text-white text-3xl"></FaInstagramSquare>{" "}
+              <FaInstagramSquare className=" text-3xl"></FaInstagramSquare>{" "}
             </a>
             <a href="https:/twitter.com">
               {" "}
-              <FaTwitterSquare className="text-white text-3xl"></FaTwitterSquare>{" "}
+              <FaTwitterSquare className=" text-3xl"></FaTwitterSquare>{" "}
             </a>
           </div>
         </div>
