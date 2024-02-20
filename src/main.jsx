@@ -6,11 +6,13 @@ import { router } from "./Routes/Router";
 import "./index.css";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Favicon from "react-favicon";
 
 const queryClient = new QueryClient();
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <div className=" bg-[#FAFEEC] text-[#0B0E01] dark:bg-[#191919] font-Inter">
+    <Favicon url="https://i.ibb.co/47ZF47v/girl-with-red-vintage-convertible-car-1308-111836.jpg" />
     <React.StrictMode>
       <AuthProvider>
         <QueryClientProvider client={queryClient}>
