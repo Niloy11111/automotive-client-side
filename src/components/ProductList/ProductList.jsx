@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Swal from "sweetalert2";
-import { AuthContext } from "../AuthProvider/AuthProvider";
+
+import { AuthContext } from "../../AuthProvider/AuthProvider";
 import SingleBrandProduct from "./SingleBrandProduct";
 
 const ProductList = () => {

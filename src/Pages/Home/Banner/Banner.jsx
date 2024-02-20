@@ -1,7 +1,7 @@
 import "react-awesome-slider/dist/custom-animations/cube-animation.css";
 import "react-awesome-slider/dist/styles.css";
-import "../../src/css/All.css";
 import BannerSlider from "./BannerSlider";
+
 const Banner = () => {
   const slides = [
     {

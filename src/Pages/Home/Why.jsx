@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Why = () => {
   return (
     <div className="dark:text-[#0B0E01]">
@@ -21,10 +23,12 @@ const Why = () => {
             ensuring you make informed decisions every step of the way.
           </p>
           <div className="flex justify-center mt-5">
-            <button className="bg-[#CAFCDD] px-4 py-2  rounded hover:shadow-lg hover:translate-x-1 transition-all duration-300 ">
-              {" "}
-              Get Started
-            </button>
+            <Link to={`/login`}>
+              <button className="bg-[#CAFCDD] px-4 py-2  rounded hover:shadow-lg hover:translate-x-1 transition-all duration-300 ">
+                {" "}
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-[#F0FCC4]  p-5 rounded-3xl">
@@ -44,10 +48,12 @@ const Why = () => {
           </p>
 
           <div className="flex justify-center mt-5">
-            <button className="bg-[#C9F620] px-4 py-2  rounded hover:shadow-lg hover:translate-x-1 transition-all duration-300 ">
-              {" "}
-              Get Started
-            </button>
+            <Link to={`/login`}>
+              <button className="bg-[#C9F620] px-4 py-2  rounded hover:shadow-lg hover:translate-x-1 transition-all duration-300 ">
+                {" "}
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
         <div className="bg-[#EDFDE8]  p-5 rounded-3xl">
@@ -66,10 +72,12 @@ const Why = () => {
             side even after your purchase, providing ongoing assistance.
           </p>
           <div className="flex justify-center mt-5">
-            <button className="bg-[#CAFCDD] hover:shadow-lg hover:translate-x-1 transition-all duration-300 px-4 py-2  rounded ">
-              {" "}
-              Get Started
-            </button>
+            <Link to={`/login`}>
+              <button className="bg-[#CAFCDD] hover:shadow-lg hover:translate-x-1 transition-all duration-300 px-4 py-2  rounded ">
+                {" "}
+                Get Started
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
-import { AuthContext } from "../AuthProvider/AuthProvider";
-import Cart from "../MySingleCart/Cart";
+
+import { AuthContext } from "../../../AuthProvider/AuthProvider";
+import Cart from "./MySingleCart/Cart";
 
 const MyCart = () => {
   const { user } = useContext(AuthContext);

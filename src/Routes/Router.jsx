@@ -1,14 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
 import AddProduct from "../AddProduct/AddProduct";
 import ErrorPage from "../ErrorPage/ErrorPage";
-import MyCart from "../MyCart/MyCart";
 import HomePage from "../Pages/Home/HomePage";
+import MyCart from "../Pages/Home/MyCart/MyCart";
 import Login from "../Pages/Login/Login";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
-import ProductList from "../ProductList/ProductList";
-import ProductDetails from "../ProductsDetails/ProductDetails";
 import Root from "../Root/Root";
 import UpdateProduct from "../UpdateProducts/UpdateProduct";
+import PrivateRoute from "../components/PrivateRoute/PrivateRoute";
+import ProductList from "../components/ProductList/ProductList";
+import ProductDetails from "../components/ProductsDetails/ProductDetails";
 
 export const router = createBrowserRouter([
   {
@@ -36,7 +36,6 @@ export const router = createBrowserRouter([
         path: "/myCart",
         element: (
           <PrivateRoute>
-            {" "}
             <MyCart></MyCart>{" "}
           </PrivateRoute>
         ),
