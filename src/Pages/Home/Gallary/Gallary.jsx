@@ -62,25 +62,25 @@ const Gallary = () => {
           <div>
             <img
               className="rounded-xl"
-              src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-01/desktop/BMW-Secondary-FMA-Homepage-Cookied-Tile-01-Desktop.jpg"
+              src="https://i.ibb.co/jM1YXNd/3bafc3789efe0abb54f01dc06428ba33.jpg"
             ></img>
           </div>
           <div>
             <img
               className="rounded-xl"
-              src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-03/desktop/BMW-MY24-X5-HP-Secondary-FMA-Desktop.jpg"
+              src="https://i.ibb.co/9hmFnmW/16352ba3d24e6a45e1ce57fcc8de6d0b.jpg"
+            ></img>
+          </div>
+          <div>
+            <img
+              className="rounded-xl "
+              src="https://i.ibb.co/bvHqNN3/6295b79e28fc1f3081d38306f387f855.jpg"
             ></img>
           </div>
           <div>
             <img
               className="rounded-xl"
-              src="https://www.bmwusa.com/content/dam/bmwusa/common/fma/new-secondary-fmas-assets/non-cookied/secondary-fma-2/BMW-MY23-X7-Secondary-FMA-Desktop.jpg"
-            ></img>
-          </div>
-          <div>
-            <img
-              className="rounded-xl"
-              src="https://www.bmwusa.com/content/dam/bmwusa/common/homepage/fmas/2023-03/desktop/BMW-Secondary-FMA-Homepage-Tile-04-Desktop.jpg"
+              src="https://i.ibb.co/c2W15bC/c2967812fb5074cb642ddbd211aff50e.jpg"
             ></img>
           </div>
         </div>

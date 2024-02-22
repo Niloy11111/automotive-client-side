@@ -20,7 +20,7 @@ const BannerSlider = ({ slides }) => {
   };
 
   return (
-    <div className="h-full relative">
+    <div className="h-full relative ">
       <div
         className="bg-[#43F0F8] hover:bg-white transition-all duration-300 p-2 rounded-full absolute top-[50%] translate-x-[0%]
         
@@ -48,10 +48,15 @@ const BannerSlider = ({ slides }) => {
         style={{
           backgroundImage: `url(${slides[currentIndex].url}`,
         }}
-        className="mt-10   w-full h-full bg-cover bg-no-repeat
+        className="mt-10 bg  w-full h-full bg-cover bg-no-repeat
          rounded-xl"
       >
-        <div className=" flex justify-center items-center h-full  ">
+        <div
+          style={{
+            backgroundColor: "rgba(11, 11, 11, 0.50)",
+          }}
+          className=" flex justify-center items-center h-full  "
+        >
           <div className="    ">
             <h2 className="text-white uppercase mt-5 text-4xl font-bold font-Inter slide text-center">
               Experience Driving Beyond <br />

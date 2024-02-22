@@ -5,11 +5,11 @@ import BannerSlider from "./BannerSlider";
 const Banner = () => {
   const slides = [
     {
-      url: "https://i.ibb.co/m4r63m8/purple-convertible-purple-background-vector-53876-67342.jpg",
+      url: "https://i.ibb.co/6s2Kngx/pexels-photo-627678.jpg",
       title: "car-1",
     },
     {
-      url: "https://i.ibb.co/16WWTHJ/brown-hatchback-car-brown-background-vector-53876-64414.jpg",
+      url: "https://i.ibb.co/HDLhQQ6/pexels-photo-4024490.jpg",
       title: "car-2",
     },
     {
@@ -17,11 +17,11 @@ const Banner = () => {
       title: "car-3",
     },
     {
-      url: "https://i.ibb.co/3SVG9Zn/red-sedan-car-red-background-vector-53876-64410.jpg",
+      url: "https://i.ibb.co/gr9ddD5/luxury-car-speeds-by-modern-building-dusk-generative-ai-188544-8048.jpg",
       title: "car-4",
     },
     {
-      url: "https://i.ibb.co/QMgcSF9/blue-sports-car-blue-background-vector-53876-64362.jpg",
+      url: "https://i.ibb.co/dmFTyJh/pexels-photo-1082655.jpg",
       title: "car-5",
     },
   ];
