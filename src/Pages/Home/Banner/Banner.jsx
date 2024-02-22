@@ -21,7 +21,7 @@ const Banner = () => {
       title: "car-4",
     },
     {
-      url: "https://i.ibb.co/dmFTyJh/pexels-photo-1082655.jpg",
+      url: "https://i.ibb.co/gtS9XdV/pexels-photo-2127740.jpg",
       title: "car-5",
     },
   ];

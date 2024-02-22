@@ -5,7 +5,7 @@ const SingleBrand = ({ brand }) => {
 
   return (
     <Link to={`/brandProductList/${brand_name}`}>
-      <div className="bg-[#F0FCC4] rounded-3xl transition duration-150 p-3">
+      <div className="bg-[#F0FCC4] rounded-xl transition duration-150 p-3">
         <img
           className="h-[70px] rounded-full w-[90px] mx-auto"
           src={brand_img}

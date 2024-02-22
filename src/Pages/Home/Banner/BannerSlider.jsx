@@ -55,7 +55,7 @@ const BannerSlider = ({ slides }) => {
           style={{
             backgroundColor: "rgba(11, 11, 11, 0.50)",
           }}
-          className=" flex justify-center items-center h-full  "
+          className="rounded-xl flex justify-center items-center h-full  "
         >
           <div className="    ">
             <h2 className="text-white uppercase mt-5 text-4xl font-bold font-Inter slide text-center">
@@ -81,22 +81,22 @@ const BannerSlider = ({ slides }) => {
 
             <div className="flex gap-6 mt-10">
               <div className="bg-white w-[90px] rounded">
-                <img src="https://www.carlogos.org/car-logos/tesla-logo.png"></img>
+                <img src="https://i.ibb.co/xL3hR5R/tesla-logo.webp"></img>
               </div>
               <div className="bg-white w-[90px] rounded">
-                <img src="https://www.carlogos.org/car-logos/mercedes-benz-logo.png"></img>
+                <img src="https://i.ibb.co/0ssVz0t/mercedes-benz-logo.webp"></img>
               </div>
               <div className="bg-white w-[90px] rounded">
-                <img src="https://www.carlogos.org/car-logos/bmw-logo.png"></img>
+                <img src="https://i.ibb.co/9ZZS17j/bmw-logo.webp"></img>
               </div>
               <div className="bg-white w-[90px] rounded">
                 <img src="https://www.carlogos.org/car-logos/ford-logo.png"></img>
               </div>
               <div className="bg-white w-[90px] rounded">
-                <img src="https://www.carlogos.org/car-logos/honda-logo.png"></img>
+                <img src="https://i.ibb.co/gJd47dF/honda-logo.webp"></img>
               </div>
               <div className="bg-white w-[90px] rounded">
-                <img src="https://www.carlogos.org/car-logos/toyota-logo.png"></img>
+                <img src="https://i.ibb.co/Gpp5b0Q/toyota-logo.webp"></img>
               </div>
             </div>
           </div>

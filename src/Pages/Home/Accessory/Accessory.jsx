@@ -12,7 +12,7 @@ const Accessory = () => {
       }}
     >
       <div className="flex justify-center items-center dark:text-[#0B0E01]">
-        <div className="mt-44 bg-[#EDFDE8] px-8 py-5 rounded-3xl">
+        <div className="mt-44 bg-[#EDFDE8] px-8 py-5 rounded">
           <h2 className=" text-xl font-extrabold ">THW BMW ACCESSORY CENTER</h2>
           <h3 className=" text-center">Customize your SUV before delivery</h3>
           <NavLink to="/login" className="flex justify-center">
